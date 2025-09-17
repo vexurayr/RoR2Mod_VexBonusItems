@@ -1,0 +1,10 @@
+F:\Visual Studio Projects\RoR2 Mod_Vex Bonus Items\RoR2 Mod_Vex Bonus Items\obj\Debug\netstandard2.1\RoR2 Mod_Vex Bonus Items.csproj.AssemblyReference.cache
+F:\Visual Studio Projects\RoR2 Mod_Vex Bonus Items\RoR2 Mod_Vex Bonus Items\obj\Debug\netstandard2.1\RoR2 Mod_Vex Bonus Items.GeneratedMSBuildEditorConfig.editorconfig
+F:\Visual Studio Projects\RoR2 Mod_Vex Bonus Items\RoR2 Mod_Vex Bonus Items\obj\Debug\netstandard2.1\RoR2 Mod_Vex Bonus Items.AssemblyInfoInputs.cache
+F:\Visual Studio Projects\RoR2 Mod_Vex Bonus Items\RoR2 Mod_Vex Bonus Items\obj\Debug\netstandard2.1\RoR2 Mod_Vex Bonus Items.AssemblyInfo.cs
+F:\Visual Studio Projects\RoR2 Mod_Vex Bonus Items\RoR2 Mod_Vex Bonus Items\obj\Debug\netstandard2.1\RoR2 Mod_Vex Bonus Items.csproj.CoreCompileInputs.cache
+F:\Visual Studio Projects\RoR2 Mod_Vex Bonus Items\RoR2 Mod_Vex Bonus Items\bin\Debug\netstandard2.1\RoR2 Mod_Vex Bonus Items.deps.json
+F:\Visual Studio Projects\RoR2 Mod_Vex Bonus Items\RoR2 Mod_Vex Bonus Items\bin\Debug\netstandard2.1\RoR2 Mod_Vex Bonus Items.dll
+F:\Visual Studio Projects\RoR2 Mod_Vex Bonus Items\RoR2 Mod_Vex Bonus Items\bin\Debug\netstandard2.1\RoR2 Mod_Vex Bonus Items.pdb
+F:\Visual Studio Projects\RoR2 Mod_Vex Bonus Items\RoR2 Mod_Vex Bonus Items\obj\Debug\netstandard2.1\RoR2 Mod_Vex Bonus Items.dll
+F:\Visual Studio Projects\RoR2 Mod_Vex Bonus Items\RoR2 Mod_Vex Bonus Items\obj\Debug\netstandard2.1\RoR2 Mod_Vex Bonus Items.pdb

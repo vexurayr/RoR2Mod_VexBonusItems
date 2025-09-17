@@ -1,0 +1,1638 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.33f1 (ee5a2aa03ab2) revision 15620650'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16108 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.33f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+F:/Unity/Unity Projects/Vex Bonus Items
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+65333
+Successfully changed project path to: F:/Unity/Unity Projects/Vex Bonus Items
+F:/Unity/Unity Projects/Vex Bonus Items
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [13328] Host "[IP] 192.168.0.168 [Port] 0 [Flags] 2 [Guid] 3225753924 [EditorId] 3225753924 [Version] 1048832 [Id] WindowsEditor(7,Vex_Tower) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [13328] Host "[IP] 192.168.0.168 [Port] 0 [Flags] 2 [Guid] 3225753924 [EditorId] 3225753924 [Version] 1048832 [Id] WindowsEditor(7,Vex_Tower) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 51.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/Unity/Unity Projects/Vex Bonus Items/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12115 MB
+    Driver:   32.0.15.5612
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003005 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 46.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.423 seconds
+Domain Reload Profiling:
+	ReloadAssembly (423ms)
+		BeginReloadAssembly (67ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (294ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (68ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (180ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (47ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (92ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002666 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.031 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1032ms)
+		BeginReloadAssembly (89ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (872ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (172ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (583ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (510ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3492 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (4.4 MB). Loaded Objects now: 3932.
+Memory consumption went from 132.5 MB to 128.1 MB.
+Total: 4.869600 ms (FindLiveObjects: 0.282500 ms CreateObjectMapping: 0.174600 ms MarkObjects: 2.679000 ms  DeleteObjects: 1.732200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 482485.066922 seconds.
+  path: Assets/Models/Meshes/Sword of Looting
+  artifactKey: Guid(a50f3d4c1f4f4254b9494989981cb9e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Meshes/Sword of Looting using Guid(a50f3d4c1f4f4254b9494989981cb9e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7816a21b6f22d4bf640402dedcd91f7e') in 0.010756 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.431166 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting
+  artifactKey: Guid(e9e6b10310ef1014bb35629b611fda89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting using Guid(e9e6b10310ef1014bb35629b611fda89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c8c61428d0be7ff1c04db2762abb06') in 0.003635 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.092379 seconds.
+  path: Assets/Textures/Items/Sword of Looting
+  artifactKey: Guid(d18a5d6b1cabc6542b725fed9be4cdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Textures/Items/Sword of Looting using Guid(d18a5d6b1cabc6542b725fed9be4cdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8eaa5286af8f2d98e43738a58fc7081') in 0.002232 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 30.271107 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37a646c100a9086aee49fd84437daa7a') in 0.050514 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 198.315286 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcc25932a997cad27f6b443a95024dcf') in 0.889101 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.292836 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bc597726ac638314664c4f5306dc609') in 0.065468 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 2.942462 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f34465f3740aa86504ff79dd2ef47cf') in 0.006687 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 4.360225 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a8d3b7a12cfe5fff7e35672c0f33b1') in 0.030906 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 17.313383 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039a66a691e20f9ab6af9328a697f479') in 0.335352 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.141137 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1943f9e9c83fbbafff502c236efc450') in 0.016674 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 2.531216 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd067d82f46b1d2e7b0094931912064f') in 0.018725 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 13.895371 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf0ad509429535336499266be4333a3') in 0.026606 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 8.511687 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012f126b1d66355119df6e612f0c1d5a') in 0.016412 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 17.635864 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69569ad98a69e15f9d3892b71e12c5c6') in 0.011527 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 7.087064 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fed01426c62f5241645ac8c2b908232b') in 0.493208 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 1.615192 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffb6b0831ab78042cd1feb01ff1500bc') in 0.050655 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 1.729157 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed6f875a93e05c9385a01a03648783f') in 0.028149 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 9.459100 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd372046909130044a1ec1e9544cd4d11') in 0.032233 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 2.180158 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96cd0cfeb23542203610233b73571cb7') in 0.148067 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 1.590520 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2edf693d25005c696b60ac3e4b2c8146') in 0.028304 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 2.351649 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f63a83827af7fd4a8018b1ae40ac854') in 0.012816 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 5.857376 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2e55b100ab3f745326736cd982623cc') in 0.692391 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 28.674745 seconds.
+  path: Assets/Materials/Items/Sword of Looting/DynamiteMaterial.mat
+  artifactKey: Guid(bcdf3bbfac1fea541848a4fda98520da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Materials/Items/Sword of Looting/DynamiteMaterial.mat using Guid(bcdf3bbfac1fea541848a4fda98520da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8647fa0ac4e3928bd64e4bc3d7dc56be') in 0.076691 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.239596 seconds.
+  path: Assets/Materials/Items/Sword of Looting/DiamondMaterial.mat
+  artifactKey: Guid(bcdf3bbfac1fea541848a4fda98520da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Materials/Items/Sword of Looting/DiamondMaterial.mat using Guid(bcdf3bbfac1fea541848a4fda98520da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ef9cbca6f00caa3371deff42a2d93c') in 0.018391 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 86.333995 seconds.
+  path: Assets/Materials/Items/Sword of Looting/DiamondMaterial 1.mat
+  artifactKey: Guid(bce8ec22e04b7d94980d33c6e7c9fcf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Materials/Items/Sword of Looting/DiamondMaterial 1.mat using Guid(bce8ec22e04b7d94980d33c6e7c9fcf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd0df3dc568b7b85343d73e39aaa6a8') in 0.358561 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.293132 seconds.
+  path: Assets/Materials/Items/Sword of Looting/WoodMaterial.mat
+  artifactKey: Guid(bce8ec22e04b7d94980d33c6e7c9fcf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Materials/Items/Sword of Looting/WoodMaterial.mat using Guid(bce8ec22e04b7d94980d33c6e7c9fcf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5d6b9ea90f5ce02907623e325c40898') in 0.041342 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 233.621426 seconds.
+  path: Assets/Materials/Items/Sword of Looting/DiamondMaterial 1.mat
+  artifactKey: Guid(2cbb6dcaee7317c4d9184d30cd9de3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Materials/Items/Sword of Looting/DiamondMaterial 1.mat using Guid(2cbb6dcaee7317c4d9184d30cd9de3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ac6f2ad12ae721a27d20d949820195') in 0.057314 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.015536 seconds.
+  path: Assets/Materials/Items/Sword of Looting/DarkerDiamondMaterial.mat
+  artifactKey: Guid(2cbb6dcaee7317c4d9184d30cd9de3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Materials/Items/Sword of Looting/DarkerDiamondMaterial.mat using Guid(2cbb6dcaee7317c4d9184d30cd9de3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4fa4989439c8d05512c849168a0a4ee') in 0.013714 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 797.120610 seconds.
+  path: Assets/EasyMeshCombine/Scripts
+  artifactKey: Guid(76981efac7c5b0740ab12c4aa3e47261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/EasyMeshCombine/Scripts using Guid(76981efac7c5b0740ab12c4aa3e47261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c8de4d2854a1fcc7b71b69601f80f0e') in 0.014084 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2855.605863 seconds.
+  path: Assets/Models/Meshes/Sword of Looting/SwordOfLootingMesh.asset
+  artifactKey: Guid(9c622821b290d654ab7444f27411261d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Meshes/Sword of Looting/SwordOfLootingMesh.asset using Guid(9c622821b290d654ab7444f27411261d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8f47e2dd7bc2b19a570a7e3599e400b') in 0.036762 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 22.217922 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.018462 seconds  code(4) message(Build asset version error: assets/materials/items/sword of looting/woodmaterial.mat.meta in SourceAssetDB has modification time of '2024-11-18T22:04:54.2066739Z' while content on disk has modification time of '2024-11-18T22:20:32.9647849Z')
+  ERROR: Build asset version error: assets/materials/items/sword of looting/woodmaterial.mat.meta in SourceAssetDB has modification time of '2024-11-18T22:04:54.2066739Z' while content on disk has modification time of '2024-11-18T22:20:32.9647849Z'
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 4.919726 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.006432 seconds  code(4) message(Build asset version error: assets/materials/items/sword of looting/woodmaterial.mat.meta in SourceAssetDB has modification time of '2024-11-18T22:04:54.2066739Z' while content on disk has modification time of '2024-11-18T22:20:32.9647849Z')
+  ERROR: Build asset version error: assets/materials/items/sword of looting/woodmaterial.mat.meta in SourceAssetDB has modification time of '2024-11-18T22:04:54.2066739Z' while content on disk has modification time of '2024-11-18T22:20:32.9647849Z'
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 19.809331 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4cb50a6a6c37d4fece58feb4cf1c15e') in 0.036221 seconds 
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255027f4abb302be0218f24405559c6d') in 0.063264 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 6.787257 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab
+  artifactKey: Guid(ab72a5828aa8b0c4db13d199ed9e6a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab using Guid(ab72a5828aa8b0c4db13d199ed9e6a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c16a764ccc5e179753a2130cf274c41') in 0.039551 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 517.383861 seconds.
+  path: Assets/Textures/Items/Sword of Looting/SwordOfLootingIcon.png
+  artifactKey: Guid(e14f4f757292abf4cb09c4fdb82fe294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Textures/Items/Sword of Looting/SwordOfLootingIcon.png using Guid(e14f4f757292abf4cb09c4fdb82fe294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '163346d11653457ffd145b4a47cb9a8a') in 0.058024 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 23.969076 seconds.
+  path: Assets/Textures/Items/Sword of Looting/SwordOfLootingIcon.png
+  artifactKey: Guid(e14f4f757292abf4cb09c4fdb82fe294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Textures/Items/Sword of Looting/SwordOfLootingIcon.png using Guid(e14f4f757292abf4cb09c4fdb82fe294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8a6d9bccc9fa978b0af5872a20e12c0') in 0.303856 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 55.748534 seconds.
+  path: Assets/Materials/Items/Sword of Looting/DarkerDiamondMaterial.mat
+  artifactKey: Guid(2cbb6dcaee7317c4d9184d30cd9de3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Materials/Items/Sword of Looting/DarkerDiamondMaterial.mat using Guid(2cbb6dcaee7317c4d9184d30cd9de3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0857a8eed4aeffd44f8f0cc8dc3f726b') in 0.019975 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Materials/Items/Sword of Looting/WoodMaterial.mat
+  artifactKey: Guid(bce8ec22e04b7d94980d33c6e7c9fcf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Materials/Items/Sword of Looting/WoodMaterial.mat using Guid(bce8ec22e04b7d94980d33c6e7c9fcf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae2cadf6b2c19fa31583aad43a92b150') in 0.024570 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 17.249300 ms (FindLiveObjects: 0.261300 ms CreateObjectMapping: 0.135600 ms MarkObjects: 15.589300 ms  DeleteObjects: 1.262100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 3.532300 ms (FindLiveObjects: 0.195700 ms CreateObjectMapping: 0.092000 ms MarkObjects: 2.014000 ms  DeleteObjects: 1.230100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 3.601300 ms (FindLiveObjects: 0.191600 ms CreateObjectMapping: 0.087000 ms MarkObjects: 2.098900 ms  DeleteObjects: 1.222400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 3.989100 ms (FindLiveObjects: 0.199300 ms CreateObjectMapping: 0.101200 ms MarkObjects: 2.313200 ms  DeleteObjects: 1.374700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 3.733300 ms (FindLiveObjects: 0.208500 ms CreateObjectMapping: 0.098400 ms MarkObjects: 2.166700 ms  DeleteObjects: 1.257800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 3.582400 ms (FindLiveObjects: 0.178800 ms CreateObjectMapping: 0.086000 ms MarkObjects: 2.075900 ms  DeleteObjects: 1.240700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4140.382043 seconds.
+  path: Assets/Models/Meshes/Sword of Looting/SwordOfLootingMesh.asset
+  artifactKey: Guid(9c622821b290d654ab7444f27411261d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Meshes/Sword of Looting/SwordOfLootingMesh.asset using Guid(9c622821b290d654ab7444f27411261d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359d946da663e0b0976652902b577b3d') in 0.093905 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.513155 seconds.
+  path: Assets/Models/Meshes/Two Ton Vest/TwoTonVestMesh.asset
+  artifactKey: Guid(fd964276e18784047ac21bf668889cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Meshes/Two Ton Vest/TwoTonVestMesh.asset using Guid(fd964276e18784047ac21bf668889cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0723d227b1d88a707ad98bce5105767e') in 0.019381 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2.832977 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab
+  artifactKey: Guid(ab72a5828aa8b0c4db13d199ed9e6a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab using Guid(ab72a5828aa8b0c4db13d199ed9e6a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d7dddc82e6d8848b3ab3d2f39593d9e') in 0.054522 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 2.053573 seconds.
+  path: Assets/Models/Prefabs/Items/Adaptive Goggles/AdaptiveGogglesDisplay.prefab
+  artifactKey: Guid(5c6ca13396ba1b54b81f27310123fdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Adaptive Goggles/AdaptiveGogglesDisplay.prefab using Guid(5c6ca13396ba1b54b81f27310123fdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1690b74e241a99772669d520e44f60c') in 0.304728 seconds 
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 16.179446 seconds.
+  path: Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestDisplay.prefab
+  artifactKey: Guid(3b3b32bc452e77a42825bad3a7254c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestDisplay.prefab using Guid(3b3b32bc452e77a42825bad3a7254c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1f6c9b3c1ae9454ce976bfa0b416bd2') in 0.135967 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 20.114843 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab
+  artifactKey: Guid(ab72a5828aa8b0c4db13d199ed9e6a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab using Guid(ab72a5828aa8b0c4db13d199ed9e6a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75f5764001c6f54ac6c11558dc2296fd') in 0.011134 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 6.602719 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab
+  artifactKey: Guid(ab72a5828aa8b0c4db13d199ed9e6a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab using Guid(ab72a5828aa8b0c4db13d199ed9e6a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd308aaf5cf8e98d2040496a12744df1b') in 0.010721 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 15.415999 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb78935b2b506283f0c3bb2a813b555') in 0.010164 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 2.252478 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52bd303c0d3c9f3f007f3a96b7f6e71d') in 0.019966 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 15.500500 ms (FindLiveObjects: 0.191600 ms CreateObjectMapping: 0.113000 ms MarkObjects: 13.821800 ms  DeleteObjects: 1.373200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 3.650900 ms (FindLiveObjects: 0.178900 ms CreateObjectMapping: 0.084800 ms MarkObjects: 2.164900 ms  DeleteObjects: 1.221800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 3.671700 ms (FindLiveObjects: 0.184500 ms CreateObjectMapping: 0.084400 ms MarkObjects: 2.072500 ms  DeleteObjects: 1.329600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 3.616500 ms (FindLiveObjects: 0.190200 ms CreateObjectMapping: 0.088800 ms MarkObjects: 2.079200 ms  DeleteObjects: 1.256400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 3.586200 ms (FindLiveObjects: 0.193100 ms CreateObjectMapping: 0.096300 ms MarkObjects: 1.991600 ms  DeleteObjects: 1.303400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 4.924000 ms (FindLiveObjects: 0.226700 ms CreateObjectMapping: 0.095700 ms MarkObjects: 3.217300 ms  DeleteObjects: 1.383700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 3.867300 ms (FindLiveObjects: 0.198600 ms CreateObjectMapping: 0.088900 ms MarkObjects: 2.162500 ms  DeleteObjects: 1.415400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.5 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 4.037500 ms (FindLiveObjects: 0.212100 ms CreateObjectMapping: 0.114100 ms MarkObjects: 2.257400 ms  DeleteObjects: 1.453200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 3.724300 ms (FindLiveObjects: 0.206700 ms CreateObjectMapping: 0.084700 ms MarkObjects: 2.044000 ms  DeleteObjects: 1.388200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 3.702200 ms (FindLiveObjects: 0.199900 ms CreateObjectMapping: 0.123300 ms MarkObjects: 2.028000 ms  DeleteObjects: 1.350500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.2 MB.
+Total: 3.787100 ms (FindLiveObjects: 0.204300 ms CreateObjectMapping: 0.099800 ms MarkObjects: 2.141600 ms  DeleteObjects: 1.340600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3384.103712 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bb79eccdcd942ee94aec6efb32568c') in 0.081650 seconds 
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 5.400347 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a72ec66c9502b3cd16ef660eba0db9e') in 0.017608 seconds 
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 7.298184 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb20b979bb8380b4333611b8ffcb94dc') in 0.019546 seconds 
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 103.000767 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9952fa118da281c43e660520031a5c0') in 0.018805 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 20.199191 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup 1.prefab
+  artifactKey: Guid(2e04777f510b3964f82c3529d31d5b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup 1.prefab using Guid(2e04777f510b3964f82c3529d31d5b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c9cf4681df0a39ce2e3839e21b4d264') in 0.015860 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 6.582082 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab
+  artifactKey: Guid(2e04777f510b3964f82c3529d31d5b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab using Guid(2e04777f510b3964f82c3529d31d5b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c013ae404df352442b90c8be3c1857e') in 0.021042 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 19.501804 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ade7677e5ace39c7a5f546a1af332335') in 0.010750 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 7.579864 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fe4ce497a5a20e4a73ce36948b5412d') in 0.020198 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.1 MB.
+Total: 6.061600 ms (FindLiveObjects: 0.192200 ms CreateObjectMapping: 0.106800 ms MarkObjects: 4.407500 ms  DeleteObjects: 1.354600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.1 MB.
+Total: 3.630200 ms (FindLiveObjects: 0.194500 ms CreateObjectMapping: 0.089700 ms MarkObjects: 1.995300 ms  DeleteObjects: 1.350100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.1 MB.
+Total: 3.941500 ms (FindLiveObjects: 0.209200 ms CreateObjectMapping: 0.096300 ms MarkObjects: 2.237600 ms  DeleteObjects: 1.397800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.1 MB.
+Total: 3.890700 ms (FindLiveObjects: 0.204600 ms CreateObjectMapping: 0.109500 ms MarkObjects: 2.231700 ms  DeleteObjects: 1.342900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.5 MB to 62.1 MB.
+Total: 4.088600 ms (FindLiveObjects: 0.211000 ms CreateObjectMapping: 0.100400 ms MarkObjects: 2.231100 ms  DeleteObjects: 1.545100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.6 MB to 62.1 MB.
+Total: 3.529600 ms (FindLiveObjects: 0.187000 ms CreateObjectMapping: 0.101300 ms MarkObjects: 1.977500 ms  DeleteObjects: 1.262000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5498.644967 seconds.
+  path: Assets/Models/Meshes/Sword of Looting/SwordOfLootingMesh.asset
+  artifactKey: Guid(9c622821b290d654ab7444f27411261d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Meshes/Sword of Looting/SwordOfLootingMesh.asset using Guid(9c622821b290d654ab7444f27411261d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f997649e25d50303ed7fdb4dda706a3') in 0.119312 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 13.478463 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab
+  artifactKey: Guid(2e04777f510b3964f82c3529d31d5b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab using Guid(2e04777f510b3964f82c3529d31d5b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bf7e1f09b8f930da1b197d235743698') in 0.073992 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 44.595256 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b75df94492d2067cc662437d1890165f') in 0.618075 seconds 
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 2.671214 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c92d007bc4e9a45230e1dbaa1c79b93f') in 0.017916 seconds 
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 50.177376 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a451707d89f3cbc62af9e81620922a49') in 0.024767 seconds 
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 10.142674 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c847bfb2ef7a80bdfc1c6eca6bd071c') in 0.017966 seconds 
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 10.650480 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c8b57e1b380f72949bbfc78348841b9') in 0.018386 seconds 
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 75.727625 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0d61fababd8b65ac0b32c97b67521b5') in 0.013762 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 17.291613 seconds.
+  path: Assets/Models/Meshes/Sword of Looting/SwordOfLootingMesh.asset
+  artifactKey: Guid(9c622821b290d654ab7444f27411261d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Meshes/Sword of Looting/SwordOfLootingMesh.asset using Guid(9c622821b290d654ab7444f27411261d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a5d035216bd1e9647e19802a639c72f') in 0.012251 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 17.168185 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0db9bf4c7f7b02ee9265f3ce972d3984') in 0.017271 seconds 
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 13.730129 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cbc30b09a261ca3b1b1037f660cc4cf') in 0.043183 seconds 
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 48.935390 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46349c80c7dc99b632a0b0800f33e57e') in 0.503419 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 31.571766 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup 1.prefab
+  artifactKey: Guid(725741fd124c3db4199c92ce83768b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup 1.prefab using Guid(725741fd124c3db4199c92ce83768b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47234b3d57965e04136598937564a517') in 0.057897 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 6.330701 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab
+  artifactKey: Guid(725741fd124c3db4199c92ce83768b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab using Guid(725741fd124c3db4199c92ce83768b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a403bc40720c56ba25ded195b6e80ac6') in 0.013354 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 4.978247 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d818fe7123d9950171ac53e5b44c2ad') in 0.009377 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 1.195000 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e21c64bff8338140c8c82eb6b3d270') in 0.121369 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 4.084475 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3235258cad82d0eb18464154a90aaa46') in 0.015318 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 8.366172 seconds.
+  path: Assets/Models/Meshes/Sword of Looting/SwordOfLootingMesh.asset
+  artifactKey: Guid(9c622821b290d654ab7444f27411261d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Meshes/Sword of Looting/SwordOfLootingMesh.asset using Guid(9c622821b290d654ab7444f27411261d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5d060e65e3cfe70eb352e23a0780e2f') in 0.013755 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.8 MB to 62.4 MB.
+Total: 6.031500 ms (FindLiveObjects: 0.199400 ms CreateObjectMapping: 0.092700 ms MarkObjects: 4.390000 ms  DeleteObjects: 1.348700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.8 MB to 62.4 MB.
+Total: 3.784700 ms (FindLiveObjects: 0.213900 ms CreateObjectMapping: 0.104900 ms MarkObjects: 2.103900 ms  DeleteObjects: 1.361200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.8 MB to 62.4 MB.
+Total: 3.693800 ms (FindLiveObjects: 0.214400 ms CreateObjectMapping: 0.093100 ms MarkObjects: 2.041000 ms  DeleteObjects: 1.344700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.8 MB to 62.4 MB.
+Total: 3.711000 ms (FindLiveObjects: 0.197500 ms CreateObjectMapping: 0.089700 ms MarkObjects: 2.077300 ms  DeleteObjects: 1.344800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3981.
+Memory consumption went from 66.8 MB to 62.4 MB.
+Total: 3.705800 ms (FindLiveObjects: 0.205800 ms CreateObjectMapping: 0.106500 ms MarkObjects: 2.092200 ms  DeleteObjects: 1.300500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 145.819262 seconds.
+  path: Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestBackup.prefab
+  artifactKey: Guid(a7c714cc9ed5de04686e575a36a1c900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestBackup.prefab using Guid(a7c714cc9ed5de04686e575a36a1c900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c5e082d5ec655a99bd9299784323345') in 0.191788 seconds 
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 5.341240 seconds.
+  path: Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestBackup.prefab
+  artifactKey: Guid(a7c714cc9ed5de04686e575a36a1c900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestBackup.prefab using Guid(a7c714cc9ed5de04686e575a36a1c900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aac84aa65d8ee16ada57610eebf0fb8') in 0.010386 seconds 
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 54.470719 seconds.
+  path: Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestPickup.prefab
+  artifactKey: Guid(17ad241bdba45964297632d15d02788b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestPickup.prefab using Guid(17ad241bdba45964297632d15d02788b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d4922cd857892d1e8194e99f0a3cbc8') in 0.012934 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 5.976464 seconds.
+  path: Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestPickup 1.prefab
+  artifactKey: Guid(f01679dbb9cc761478a68deea0d908f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestPickup 1.prefab using Guid(f01679dbb9cc761478a68deea0d908f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f3af9dad2d79819eb4ece6586837560') in 0.019571 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 8.584075 seconds.
+  path: Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestDisplay.prefab
+  artifactKey: Guid(f01679dbb9cc761478a68deea0d908f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestDisplay.prefab using Guid(f01679dbb9cc761478a68deea0d908f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa92757b2960e40ae23895c1011932b') in 0.022052 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 9.260554 seconds.
+  path: Assets/Models/Meshes/Sword of Looting/SwordOfLootingMesh.asset
+  artifactKey: Guid(9c622821b290d654ab7444f27411261d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Meshes/Sword of Looting/SwordOfLootingMesh.asset using Guid(9c622821b290d654ab7444f27411261d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a9b31e5a24177da5bff15886924d270') in 0.009296 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.778733 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab
+  artifactKey: Guid(725741fd124c3db4199c92ce83768b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab using Guid(725741fd124c3db4199c92ce83768b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '098ad657c8d51ca6bfa43ce16f959ab5') in 0.003313 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 15.325286 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94a2a48238a1981ebaca0546dfe3907e') in 0.039602 seconds 
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 4.644366 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab
+  artifactKey: Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingBackup.prefab using Guid(d28bc7b93da824b43b44e0780dde6086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e38be4c4e2fa349c52d737fdcc9c5ce8') in 0.205857 seconds 
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 83.026808 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f3a999cbb62ac6097683702689bd4e') in 0.045734 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 4.213319 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup 1.prefab
+  artifactKey: Guid(c0650e34063320a4cb973963505cf986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup 1.prefab using Guid(c0650e34063320a4cb973963505cf986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1e0da742576a8fdb055484b08f645e') in 0.049061 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 6.104340 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab
+  artifactKey: Guid(c0650e34063320a4cb973963505cf986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab using Guid(c0650e34063320a4cb973963505cf986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f50b10f9d231bcc89ea1256a82d95881') in 0.012920 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 21.856037 seconds.
+  path: Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestPickup.prefab
+  artifactKey: Guid(17ad241bdba45964297632d15d02788b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestPickup.prefab using Guid(17ad241bdba45964297632d15d02788b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c562213ea0532c44f89e97a2554fc5f') in 0.009217 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 4.815452 seconds.
+  path: Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestPickup.prefab
+  artifactKey: Guid(17ad241bdba45964297632d15d02788b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestPickup.prefab using Guid(17ad241bdba45964297632d15d02788b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4aa5d2b258ab646a508dacbeba570ad') in 0.027713 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 17.627991 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20a928046c4052d443fb1ad4f6dbd848') in 0.054081 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 2.002616 seconds.
+  path: Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+  artifactKey: Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab using Guid(9d16d4c3220102546bd35ad282232738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68393c899098f94174048e14c99815a') in 0.057221 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3982.
+Memory consumption went from 67.1 MB to 62.6 MB.
+Total: 4.532600 ms (FindLiveObjects: 0.223300 ms CreateObjectMapping: 0.095300 ms MarkObjects: 2.845700 ms  DeleteObjects: 1.367200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3982.
+Memory consumption went from 67.0 MB to 62.6 MB.
+Total: 3.675600 ms (FindLiveObjects: 0.204300 ms CreateObjectMapping: 0.107200 ms MarkObjects: 2.007000 ms  DeleteObjects: 1.356400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3982.
+Memory consumption went from 67.0 MB to 62.6 MB.
+Total: 3.820900 ms (FindLiveObjects: 0.203000 ms CreateObjectMapping: 0.094100 ms MarkObjects: 2.131600 ms  DeleteObjects: 1.391300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3982.
+Memory consumption went from 67.1 MB to 62.6 MB.
+Total: 3.963800 ms (FindLiveObjects: 0.213000 ms CreateObjectMapping: 0.101400 ms MarkObjects: 2.270500 ms  DeleteObjects: 1.378200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3982.
+Memory consumption went from 67.1 MB to 62.6 MB.
+Total: 3.588400 ms (FindLiveObjects: 0.197900 ms CreateObjectMapping: 0.101600 ms MarkObjects: 1.986700 ms  DeleteObjects: 1.301600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (4.4 MB). Loaded Objects now: 3982.
+Memory consumption went from 67.0 MB to 62.6 MB.
+Total: 3.771300 ms (FindLiveObjects: 0.214400 ms CreateObjectMapping: 0.097800 ms MarkObjects: 2.105500 ms  DeleteObjects: 1.319800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

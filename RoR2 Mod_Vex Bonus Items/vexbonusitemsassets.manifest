@@ -1,0 +1,70 @@
+ManifestFileVersion: 0
+CRC: 1122202946
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 192a7667e8dfbb1e22cae14e0181bc16
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0e3f6a3267f72f11058c2f0ff35048f2
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1ca002da428252441b92f28d83c8a65f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Unity.ProBuilder
+  ClassName: UnityEngine.ProBuilder.AutoUnwrapSettings
+- AssemblyName: Unity.ProBuilder
+  ClassName: UnityEngine.ProBuilder.Face
+- AssemblyName: Unity.ProBuilder
+  ClassName: UnityEngine.ProBuilder.Shapes.Torus
+- AssemblyName: Unity.ProBuilder
+  ClassName: UnityEngine.ProBuilder.SharedVertex
+- AssemblyName: Unity.ProBuilder
+  ClassName: UnityEngine.ProBuilder.UnwrapParameters
+Assets:
+- Assets/Materials/Items/Sword of Looting/DarkerDiamondMaterial.mat
+- Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestPickup.prefab
+- Assets/Materials/Items/Sword of Looting/WoodMaterial.mat
+- Assets/Models/Prefabs/Items/Divine Ring/DivineRingDisplay.prefab
+- Assets/Materials/Items/Adaptive Goggles/AdaptiveGogglesMaterial.mat
+- Assets/Materials/Items/Two Ton Vest/DynamiteMaterial.mat
+- Assets/Models/Prefabs/Items/Two Ton Vest/TwoTonVestDisplay.prefab
+- Assets/Models/Prefabs/Items/Divine Ring/DivineRingPickup.prefab
+- Assets/Textures/Items/Sword of Looting/SwordOfLootingIcon.png
+- Assets/Textures/Items/Two Ton Vest/TwoTonVestIcon.png
+- Assets/Materials/Items/Two Ton Vest/StrapMaterial.mat
+- Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingPickup.prefab
+- Assets/Textures/Items/Divine Ring/DivineRingIcon.png
+- Assets/Models/Prefabs/Items/Adaptive Goggles/AdaptiveGogglesDisplay.prefab
+- Assets/Materials/Items/Divine Ring/DivineRingMaterial.mat
+- Assets/Models/Meshes/Adaptive Goggles/AdaptiveGogglesMesh.asset
+- Assets/Materials/Items/Sword of Looting/DiamondMaterial.mat
+- Assets/Materials/Items/Two Ton Vest/PlasticMaterial.mat
+- Assets/Models/Prefabs/Items/Adaptive Goggles/AdaptiveGogglesPickup.prefab
+- Assets/Materials/Items/Adaptive Goggles/AdaptiveGogglesLensMaterial.mat
+- Assets/Models/Prefabs/Items/Sword of Looting/SwordOfLootingDisplay.prefab
+- Assets/Textures/Items/Adaptive Goggles/AdaptiveGogglesIcon.png
+Dependencies: []

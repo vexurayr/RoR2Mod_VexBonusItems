@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Artifact\ExampleArtifact.cs" />
+    <Compile Remove="Equipment\EliteEquipment\ExampleEliteEquipment.cs" />
+    <Compile Remove="Equipment\ExampleEquipment.cs" />
+    <Compile Remove="Equipment\ExampleEquipWithTargeting.cs" />
+    <Compile Remove="Items\ExampleItem.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="vexbonusitemsassets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="vexbonusitemsassets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Core" Version="5.4.21" />
+
+	<PackageReference Include="R2API.Items" Version="1.0.*" />
+	<PackageReference Include="R2API.Language" Version="1.0.*" />
+	<PackageReference Include="R2API.Elites" Version="1.0.*" />
+	<PackageReference Include="R2API.Prefab" Version="1.0.*" />
+	<PackageReference Include="R2API.DamageType" Version="1.0.*" />
+	<PackageReference Include="R2API.RecalculateStats" Version="1.0.*" />
+
+	<PackageReference Include="UnityEngine.Modules" Version="2021.3.33" IncludeAssets="compile" />
+	<PackageReference Include="RiskOfRain2.GameLibs" Version="1.3.9.0-r.0" />
+	<PackageReference Include="MMHOOK.RoR2" Version="2025.6.3" NoWarn="NU1701" />
+  </ItemGroup>
+
+</Project>
