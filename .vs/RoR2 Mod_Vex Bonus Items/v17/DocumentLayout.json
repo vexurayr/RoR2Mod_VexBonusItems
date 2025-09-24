@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|solutionrelative:ror2 mod_vex bonus items\\equipment\\twotonvestequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|f:\\visual studio projects\\ror2mod_vexbonusitems\\ror2 mod_vex bonus items\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|solutionrelative:ror2 mod_vex bonus items\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|f:\\visual studio projects\\ror2mod_vexbonusitems\\ror2 mod_vex bonus items\\items\\itembase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|solutionrelative:ror2 mod_vex bonus items\\items\\itembase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|f:\\visual studio projects\\ror2mod_vexbonusitems\\ror2 mod_vex bonus items\\items\\divineringitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|solutionrelative:ror2 mod_vex bonus items\\items\\divineringitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,16 +27,8 @@
       "RelativeMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|solutionrelative:ror2 mod_vex bonus items\\items\\swordoflootingitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|f:\\visual studio projects\\ror2mod_vexbonusitems\\ror2 mod_vex bonus items\\items\\itembase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|solutionrelative:ror2 mod_vex bonus items\\items\\itembase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|f:\\visual studio projects\\ror2mod_vexbonusitems\\ror2 mod_vex bonus items\\ror2 mod_vex bonus items.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|solutionrelative:ror2 mod_vex bonus items\\ror2 mod_vex bonus items.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|f:\\visual studio projects\\ror2mod_vexbonusitems\\ror2 mod_vex bonus items\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D5D9084-DF35-4313-A2B8-709536466BFC}|RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj|solutionrelative:ror2 mod_vex bonus items\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,74 +48,79 @@
               "RelativeDocumentMoniker": "RoR2 Mod_Vex Bonus Items\\Equipment\\TwoTonVestEquipment.cs",
               "ToolTip": "F:\\Visual Studio Projects\\RoR2Mod_VexBonusItems\\RoR2 Mod_Vex Bonus Items\\Equipment\\TwoTonVestEquipment.cs",
               "RelativeToolTip": "RoR2 Mod_Vex Bonus Items\\Equipment\\TwoTonVestEquipment.cs",
-              "ViewState": "AgIAAIgBAAAAAAAAAAAAAJgBAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T05:09:26.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SwordOfLootingItem.cs",
               "DocumentMoniker": "F:\\Visual Studio Projects\\RoR2Mod_VexBonusItems\\RoR2 Mod_Vex Bonus Items\\Items\\SwordOfLootingItem.cs",
               "RelativeDocumentMoniker": "RoR2 Mod_Vex Bonus Items\\Items\\SwordOfLootingItem.cs",
               "ToolTip": "F:\\Visual Studio Projects\\RoR2Mod_VexBonusItems\\RoR2 Mod_Vex Bonus Items\\Items\\SwordOfLootingItem.cs",
               "RelativeToolTip": "RoR2 Mod_Vex Bonus Items\\Items\\SwordOfLootingItem.cs",
-              "ViewState": "AgIAAGIBAAAAAAAAAAAqwG8BAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T23:24:15.632Z"
+              "WhenOpened": "2024-11-18T23:24:15.632Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AdaptiveGogglesItem.cs",
               "DocumentMoniker": "F:\\Visual Studio Projects\\RoR2Mod_VexBonusItems\\RoR2 Mod_Vex Bonus Items\\Items\\AdaptiveGogglesItem.cs",
               "RelativeDocumentMoniker": "RoR2 Mod_Vex Bonus Items\\Items\\AdaptiveGogglesItem.cs",
               "ToolTip": "F:\\Visual Studio Projects\\RoR2Mod_VexBonusItems\\RoR2 Mod_Vex Bonus Items\\Items\\AdaptiveGogglesItem.cs",
               "RelativeToolTip": "RoR2 Mod_Vex Bonus Items\\Items\\AdaptiveGogglesItem.cs",
-              "ViewState": "AgIAAF0BAAAAAAAAAAAcwFkBAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T23:58:10.09Z"
+              "WhenOpened": "2024-11-13T23:58:10.09Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DivineRingItem.cs",
               "DocumentMoniker": "F:\\Visual Studio Projects\\RoR2Mod_VexBonusItems\\RoR2 Mod_Vex Bonus Items\\Items\\DivineRingItem.cs",
               "RelativeDocumentMoniker": "RoR2 Mod_Vex Bonus Items\\Items\\DivineRingItem.cs",
               "ToolTip": "F:\\Visual Studio Projects\\RoR2Mod_VexBonusItems\\RoR2 Mod_Vex Bonus Items\\Items\\DivineRingItem.cs",
               "RelativeToolTip": "RoR2 Mod_Vex Bonus Items\\Items\\DivineRingItem.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAswEEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGABAAAAAAAAAAAAAG0BAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:02:01.508Z"
+              "WhenOpened": "2024-10-23T20:02:01.508Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "ItemBase.cs",
               "DocumentMoniker": "F:\\Visual Studio Projects\\RoR2Mod_VexBonusItems\\RoR2 Mod_Vex Bonus Items\\Items\\ItemBase.cs",
               "RelativeDocumentMoniker": "RoR2 Mod_Vex Bonus Items\\Items\\ItemBase.cs",
               "ToolTip": "F:\\Visual Studio Projects\\RoR2Mod_VexBonusItems\\RoR2 Mod_Vex Bonus Items\\Items\\ItemBase.cs",
               "RelativeToolTip": "RoR2 Mod_Vex Bonus Items\\Items\\ItemBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T03:06:06.638Z"
+              "WhenOpened": "2024-10-27T03:06:06.638Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Main.cs",
               "DocumentMoniker": "F:\\Visual Studio Projects\\RoR2Mod_VexBonusItems\\RoR2 Mod_Vex Bonus Items\\Main.cs",
               "RelativeDocumentMoniker": "RoR2 Mod_Vex Bonus Items\\Main.cs",
               "ToolTip": "F:\\Visual Studio Projects\\RoR2Mod_VexBonusItems\\RoR2 Mod_Vex Bonus Items\\Main.cs",
               "RelativeToolTip": "RoR2 Mod_Vex Bonus Items\\Main.cs",
-              "ViewState": "AgIAAKABAAAAAAAAAAAuwLQBAABrAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T18:45:39.16Z"
+              "WhenOpened": "2024-10-23T18:45:39.16Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "RoR2 Mod_Vex Bonus Items.csproj",
               "DocumentMoniker": "F:\\Visual Studio Projects\\RoR2Mod_VexBonusItems\\RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj",
               "RelativeDocumentMoniker": "RoR2 Mod_Vex Bonus Items\\RoR2 Mod_Vex Bonus Items.csproj",

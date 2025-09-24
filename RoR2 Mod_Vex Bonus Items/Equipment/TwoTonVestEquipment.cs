@@ -1,12 +1,9 @@
 ﻿using BepInEx.Configuration;
 using EntityStates;
 using R2API;
-using Rewired.Utils;
 using RoR2;
 using RoR2_Mod_Vex_Bonus_Items.Utils;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using static RoR2_Mod_Vex_Bonus_Items.Main;
@@ -35,9 +32,13 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
 
         public override string EquipmentPickupDesc => "Turn nearby enemies into items at the cost of health.";
 
-        public override string EquipmentFullDescription => $"Instantly kill all non-boss enemies within a <style=cIsUtility>{deathRadius.Value}m radius</style>. Each enemy killed drops a random item. Lose <style=cIsHealth>{healthPercentLostPerDeath.Value * 100}% health</style> for each enemy killed. This disregards armor, barrier, and one shot protection, but will leave you with at least <style=cIsHealth>1 hp</style>.";
+        public override string EquipmentFullDescription => $"Instantly kill all non-boss enemies within a " +
+            $"<style=cIsUtility>{deathRadius.Value}m radius</style>. Each enemy killed drops a random item. " +
+            $"Lose <style=cIsHealth>{healthPercentLostPerDeath.Value * 100}% health</style> for each enemy killed. " +
+            $"This disregards armor, barrier, and one shot protection, but will leave you with at least <style=cIsHealth>1 hp</style>.";
 
-        public override string EquipmentLore => "Henry picked up the explosive device and found a delicately handwritten note beneath it.\r\n\n\"Beads of sweat leapt from her face, her hands, but they fell into a pool of resolve.\r\nIt must be done. She tells herself she is worthy, her sacrifice makes beauty.\r\nShe releases a blinding light, and the pillars collapse.\"\r\n\nHenry stares in disbelief at the note. \"Is this meant to be a poem or instructions?\"";
+        public override string EquipmentLore => "Frank filed an identification form but it was lost when the vest exploded. " +
+            "Surprisingly, the vest was not lost in the explosion, and neither was Frank.";
 
         public override float Cooldown => equipmentCooldown.Value;
 
@@ -63,7 +64,6 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
             greenItemPercentChance = config.Bind<float>("Equipment: " + EquipmentName, "Chance for an enemy to drop a green item", 0.395f, "How often should green items drop?");
             redItemPercentChance = config.Bind<float>("Equipment: " + EquipmentName, "Chance for an enemy to drop a red item", 0.01f, "How often should red items drop?");
             equipmentCooldown = config.Bind<float>("Equipment: " + EquipmentName, "Delay before the equipment can be used again", 120f, "How long should the equipment cooldown be?");
-            redItemPercentChance.Value = 0.01f;
         }
 
         public override ItemDisplayRuleDict CreateItemDisplayRules()
@@ -342,7 +342,6 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
             }.RefreshCandidates().FilterCandidatesByDistinctHurtBoxEntities();
             
             HurtBox[] hurtBoxes = ss.GetHurtBoxes();
-            ModLogger.LogInfo($"Hurt Boxes Detected: {hurtBoxes.Length}");
             int enemiesKilled = 0;
 
             foreach (HurtBox hurtBox in hurtBoxes)
@@ -451,7 +450,6 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
                 delayedDamageSecondHalf = false,
                 damage = totalDamage
             };
-            // Hopefully this makes the damage bypass armor, block, and one shot protection
             selfDamageInfo.damageType |= DamageType.BypassBlock;
             selfDamageInfo.damageType |= DamageType.BypassOneShotProtection;
 
@@ -462,7 +460,7 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
             {
                 color = Color.red,
                 origin = origin,
-                scale = 4,
+                scale = 3.5f,
                 rotation = Quaternion.identity
             };
             
@@ -487,7 +485,6 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
                 List<PickupIndex> dropList = Run.instance.availableTier3DropList;
                 // Get a random red item
                 int nextItem = Run.instance.treasureRng.RangeInt(0, dropList.Count);
-                ModLogger.LogInfo($"Number of available red items: {dropList.Count}. Next Item Index: {nextItem}");
                 // Return the pickup index of that red item
                 return dropList[nextItem];
             }
@@ -498,7 +495,6 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
                 List<PickupIndex> dropList = Run.instance.availableTier2DropList;
                 // Get a random green item
                 int nextItem = Run.instance.treasureRng.RangeInt(0, dropList.Count);
-                ModLogger.LogInfo($"Number of available green items: {dropList.Count}. Next Item Index: {nextItem}");
                 // Return the pickup index of that green item
                 return dropList[nextItem];
             }
@@ -509,7 +505,6 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
                 List<PickupIndex> dropList = Run.instance.availableTier1DropList;
                 // Get a random white item
                 int nextItem = Run.instance.treasureRng.RangeInt(0, dropList.Count);
-                ModLogger.LogInfo($"Number of available white items: {dropList.Count}. Next Item Index: {nextItem}");
                 // Return the pickup index of that white item
                 return dropList[nextItem];
             }

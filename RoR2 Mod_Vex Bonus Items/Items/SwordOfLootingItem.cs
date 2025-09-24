@@ -1,10 +1,10 @@
 ﻿using BepInEx.Configuration;
+using Mono.Cecil.Cil;
+using MonoMod.Cil;
 using R2API;
 using RoR2;
 using RoR2_Mod_Vex_Bonus_Items.Utils;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
 using static RoR2_Mod_Vex_Bonus_Items.Main;
 
@@ -12,8 +12,7 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
 {
     internal class SwordOfLootingItem : ItemBase<SwordOfLootingItem>
     {
-        public List<CharacterBody> playerBodies = new List<CharacterBody>();
-        public bool isNewStage = true;
+        public int additionalItemsToSpawn = 0;
 
         public ConfigEntry<int> additionalItems;
         public ConfigEntry<int> additionalItemsPerItem;
@@ -22,15 +21,17 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
 
         public override string ItemLangTokenName => "SWORD_OF_LOOTING";
 
-        public override string ItemPickupDesc => "Bosses drop additional items per player.";
+        public override string ItemPickupDesc => "Bosses drop additional items.";
 
         public override string ItemFullDescription => CorrectItemFullDescription();
 
-        public override string ItemLore => "Legends speak of a man who strived so hard to break his limits he became a god. His imagination was his only limitation.\r\n\nOne of his proudest feats was crafting a functional sword purely out of diamond. His second proudest moment was learning how to enchant it.";
+        public override string ItemLore => "Legends speak of a man who strived so hard to break his limits he became a god. " +
+            "His imagination was his only limitation.\r\n\nOne of his proudest feats was crafting a functional sword purely out of diamond. " +
+            "His second proudest accomplishment was learning how to enchant it.";
 
         public override ItemTier Tier => ItemTier.Tier2;
 
-        public override ItemTag[] ItemTags => new ItemTag[] { ItemTag.Utility };
+        public override ItemTag[] ItemTags => new ItemTag[] { ItemTag.Utility, ItemTag.CannotCopy, ItemTag.AIBlacklist };
 
         public override bool CanRemove => true;
 
@@ -49,8 +50,8 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
 
         public override void CreateConfig(ConfigFile config)
         {
-            additionalItems = config.Bind<int>("Item: " + ItemName, "Additional Items Dropped", 1, "How many more items should a teleporter boss give per player?");
-            additionalItemsPerItem = config.Bind<int>("Item: " + ItemName, "Additional Items Dropped Per Item", 1, "How many more items should be given per item?");
+            additionalItems = config.Bind<int>("Item: " + ItemName, "Additional Items Dropped", 1, "How many items should a teleporter boss give with one Sword of Looting?");
+            additionalItemsPerItem = config.Bind<int>("Item: " + ItemName, "Additional Items Dropped Per Item", 1, "How many items should be given with subsequent Sword of Looting?");
         }
 
         public string CorrectItemFullDescription()
@@ -59,22 +60,26 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
             if (additionalItems.Value > 1 && additionalItemsPerItem.Value <= 1)
             {
                 // additionalItems is plural
-                return $"When a <style=cHumanObjective>teleporter boss</style> would drop an item, drop <style=cIsUtility>{additionalItems.Value} more items</style> per player <style=cStack>(+{additionalItemsPerItem.Value} item per item)</style>.";
+                return $"When a <style=cHumanObjective>teleporter boss</style> would drop an item, drop " +
+                    $"<style=cIsUtility>{additionalItems.Value} more items</style> <style=cStack>(+{additionalItemsPerItem.Value} item per item)</style>.";
             }
             else if (additionalItems.Value <= 1 && additionalItemsPerItem.Value > 1)
             {
                 // additionalItemsPerItem is plural
-                return $"When a <style=cHumanObjective>teleporter boss</style> would drop an item, drop <style=cIsUtility>{additionalItems.Value} more item</style> per player <style=cStack>(+{additionalItemsPerItem.Value} items per item)</style>.";
+                return $"When a <style=cHumanObjective>teleporter boss</style> would drop an item, drop " +
+                    $"<style=cIsUtility>{additionalItems.Value} more item</style> <style=cStack>(+{additionalItemsPerItem.Value} items per item)</style>.";
             }
             else if (additionalItems.Value > 1 && additionalItemsPerItem.Value > 1)
             {
                 // Both are plural
-                return $"When a <style=cHumanObjective>teleporter boss</style> would drop an item, drop <style=cIsUtility>{additionalItems.Value} more items</style> per player <style=cStack>(+{additionalItemsPerItem.Value} items per item)</style>.";
+                return $"When a <style=cHumanObjective>teleporter boss</style> would drop an item, drop " +
+                    $"<style=cIsUtility>{additionalItems.Value} more items</style> <style=cStack>(+{additionalItemsPerItem.Value} items per item)</style>.";
             }
             else
             {
                 // Neither are plural
-                return $"When a <style=cHumanObjective>teleporter boss</style> would drop an item, drop <style=cIsUtility>{additionalItems.Value} more item</style> per player <style=cStack>(+{additionalItemsPerItem.Value} item per item)</style>.";
+                return $"When a <style=cHumanObjective>teleporter boss</style> would drop an item, drop " +
+                    $"<style=cIsUtility>{additionalItems.Value} more item</style> <style=cStack>(+{additionalItemsPerItem.Value} item per item)</style>.";
             }
         }
 
@@ -321,85 +326,50 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
 
         public override void Hooks()
         {
-            // Determines when effects are applied
-            On.RoR2.CharacterBody.OnInventoryChanged += OnInventoryChange;
-            On.RoR2.Run.OnServerBossAdded += OnBossAdded;
-            On.RoR2.Run.BeginStage += OnBeginStage;
-        }
+            BossGroup.onBossGroupStartServer += OnBossGroupStartServer;
 
-        private void OnInventoryChange(On.RoR2.CharacterBody.orig_OnInventoryChanged orig, CharacterBody self)
-        {
-            // Only look at player inventories
-            if (!self.isPlayerControlled)
+            IL.RoR2.BossGroup.DropRewards += (il) =>
             {
-                orig(self);
-                return;
-            }
-
-            // Add the player if they aren't in the list and have the item
-            if (!playerBodies.Contains(self) && GetCount(self) > 0)
-            {
-                playerBodies.Add(self);
-            }
-            // Remove the player if they are in the list and don't have the item
-            else if (playerBodies.Contains(self) && GetCount(self) <= 0)
-            {
-                playerBodies.Remove(self);
-            }
-
-            orig(self);
-        }
-
-        // This function is called for every boss spawned for the teleporter event
-        // so in order to keep the code that adds to bossGroup.bonusRewardCount rather than hard set it
-        // I need to make sure code in this method only runs once per stage.
-        private void OnBossAdded(On.RoR2.Run.orig_OnServerBossAdded orig, Run self, BossGroup bossGroup, CharacterMaster characterMaster)
-        {
-            if (isNewStage)
-            {
-                isNewStage = false;
-            }
-            else
-            {
-                return;
-            }
-
-            // Get the number of players in the run
-            int playerCount = self.participatingPlayerCount;
-
-            // Get the total additional items to spawn across all player inventories
-            int totalItems = 0;
-
-            foreach (CharacterBody body in playerBodies)
-            {
-                // Items in this inventory
-                int inventoryCount = GetCount(body);
-
-                if (inventoryCount <= 0)
+                ILLabel label = null;
+                ILCursor cursor = new ILCursor(il);
+                // These instructions are: if (scaleRewardsByPlayerCount), the label is essentially the end of the if block
+                if (cursor.TryGotoNext(
+                    x => x.MatchLdarg(0),
+                    x => x.MatchLdfld(typeof(BossGroup), nameof(BossGroup.scaleRewardsByPlayerCount))) &&
+                    cursor.TryGotoNext(x => x.MatchBrfalse(out label)))
                 {
-                    // Do nothing
-                }
-                else if (inventoryCount == 1)
-                {
-                    totalItems += additionalItems.Value;
+                    if (label == null)
+                    {
+                        return;
+                    }
+                    cursor.GotoLabel(label);
+                    cursor.Emit(OpCodes.Ldloc, 2);
+                    cursor.EmitDelegate<Func<int, int>>(incoming => incoming + additionalItemsToSpawn);
+                    cursor.Emit(OpCodes.Stloc, 2);
                 }
                 else
                 {
-                    totalItems += additionalItems.Value + (inventoryCount - 1) * additionalItemsPerItem.Value;
+                    ModLogger.LogError($"{il.Method.Name} IL Hook failed in VexBonusItems. Sword of Looting will not work.");
                 }
-            }
-            
-            bossGroup.bonusRewardCount += playerCount * totalItems;
-
-            ModLogger.LogInfo("Player Count: " + playerCount + ", Items Per Player: " + totalItems);
-
-            orig(self, bossGroup, characterMaster);
+            };
         }
 
-        private void OnBeginStage(On.RoR2.Run.orig_BeginStage orig, Run self)
+        private void OnBossGroupStartServer(BossGroup group)
         {
-            isNewStage = true;
-            orig(self);
+            // Get the number of items across all Player inventories
+            int inventoryCount = 0;
+            inventoryCount = Util.GetItemCountForTeam(TeamIndex.Player, ItemCatalog.FindItemIndex("ITEM_SWORD_OF_LOOTING"), true);
+
+            // Calculate the number of items to spawn using the config values
+            int totalItems = 0;
+            if (inventoryCount > 0)
+            {
+                totalItems = additionalItems.Value + (inventoryCount - 1) * additionalItemsPerItem.Value;
+            }
+            
+            // Because additionalItemsToSpawn is set here and not on InventoryChange, any Sword of Looting items
+            // acquired or lost (such as by dying) after the boss spawns will not change the number of items dropped.
+            additionalItemsToSpawn = totalItems;
         }
     }
 }

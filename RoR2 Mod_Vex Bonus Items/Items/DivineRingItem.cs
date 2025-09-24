@@ -1,9 +1,6 @@
 ﻿using BepInEx.Configuration;
 using R2API;
 using RoR2;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
 using RoR2_Mod_Vex_Bonus_Items.Utils;
 using static RoR2_Mod_Vex_Bonus_Items.Main;
@@ -36,7 +33,11 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
             $"<style=cIsUtility>{experienceIncreasePercentPerLevel.Value * 100}%</style> " +
             $"<style=cStack>(+{experienceIncreasePercentPerLevel.Value * 100}% per item)</style>.";
 
-        public override string ItemLore => "<style=cEvent>//--TRANSCRIPT FROM UNIDENTIFIED ARTIFACT STORAGE--//</style>\r\n\n\"What do you think it is, Bob?\"\r\n\n\"Hard to say. Frank just filed a new identification form, and the only note he left is... it's a ring.\"\r\n\n\"Are his eyes going bad? That can't be right, it's clearly the size of a crown.\"\r\n\n<style=cEvent>//--END TRANSCRIPT--//</style>";
+        public override string ItemLore => "<style=cEvent>//--TRANSCRIPT FROM UNIDENTIFIED ARTIFACT STORAGE--//</style>" +
+            "\r\n\n\"What do you think it is, Bob?\"" +
+            "\r\n\n\"Hard to say. Frank just filed a new identification form, and the only note he left is... it's a ring.\"" +
+            "\r\n\n\"Are his eyes going bad? That can't be right, it's clearly the size of a crown.\"" +
+            "\r\n\n<style=cEvent>//--END TRANSCRIPT--//</style>";
 
         public override ItemTier Tier => ItemTier.Tier3;
 
@@ -308,17 +309,19 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
 
         public override void Hooks()
         {
-            // Determines when effects are applied
-            //On.RoR2.CharacterBody.OnInventoryChanged += OnInventoryChange;
-            //On.RoR2.CharacterBody.OnLevelUp += OnLevelUp;
             RecalculateStatsAPI.GetStatCoefficients += DivineRingRecalculateStats;
             On.RoR2.ExperienceManager.AwardExperience += OnAwardExperience;
-            //On.RoR2.CharacterMaster.GiveMoney += OnCharacterGainMoney;
-            //On.RoR2.CharacterMaster.GiveExperience += OnCharacterGainExperience;
         }
 
         private void OnAwardExperience(On.RoR2.ExperienceManager.orig_AwardExperience orig, ExperienceManager self, Vector3 origin, CharacterBody body, ulong amount)
         {
+            if (body == null)
+            {
+                orig(self, origin, body, amount);
+                return;
+            }
+
+            // Get the number of items on the character body
             int inventoryCount = GetCount(body);
 
             if (body.level <= 0 || inventoryCount <= 0)
@@ -327,6 +330,7 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
                 return;
             }
 
+            // Calculate a new amount of experience to earn
             ulong newAmount = (ulong)(inventoryCount * experienceIncreasePercentPerLevel.Value * body.level);
             
             orig(self, origin, body, newAmount);
@@ -334,6 +338,11 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
 
         private void DivineRingRecalculateStats(CharacterBody sender, RecalculateStatsAPI.StatHookEventArgs args)
         {
+            if (sender == null)
+            {
+                return;
+            }
+
             if (sender.isPlayerControlled)
             {
                 int inventoryCount = GetCount(sender);

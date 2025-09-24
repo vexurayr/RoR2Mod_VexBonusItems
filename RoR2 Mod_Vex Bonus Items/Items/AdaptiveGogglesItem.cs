@@ -2,9 +2,7 @@
 using R2API;
 using RoR2;
 using RoR2_Mod_Vex_Bonus_Items.Utils;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
 using static RoR2_Mod_Vex_Bonus_Items.Main;
 
@@ -23,11 +21,23 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
 
         public override string ItemLangTokenName => "ADAPTIVE_GOGGLES";
 
-        public override string ItemPickupDesc => "Reduce ability and equipment cooldowns on enemy spawn. <style=cIsVoid>Corrupts all Soulbound Catalysts</style>.";
+        public override string ItemPickupDesc => "Reduce ability and equipment cooldowns on enemy spawn. " +
+            "<style=cIsVoid>Corrupts all Soulbound Catalysts</style>.";
 
-        public override string ItemFullDescription => $"On enemy spawn, <style=cIsUtility>reduce all ability cooldowns</style> by <style=cIsUtility>{abilityCooldown.Value}s</style> <style=cStack>(+{abilityCooldownPercentPerItem.Value * 100}% per item)</style> and <style=cIsUtility>reduce equipment cooldown</style> by <style=cIsUtility>{equipmentCooldown.Value}s</style> <style=cStack>(+{equipmentCooldownPercentPerItem.Value * 100}% per item)</style>. <style=cIsVoid>Corrupts all Soulbound Catalysts</style>.";
+        public override string ItemFullDescription => $"On enemy spawn, <style=cIsUtility>reduce all ability cooldowns</style> by " +
+            $"<style=cIsUtility>{abilityCooldown.Value}s</style> " +
+            $"<style=cStack>(+{abilityCooldownPercentPerItem.Value * 100}% per item)</style> and " +
+            $"<style=cIsUtility>reduce equipment cooldown</style> by " +
+            $"<style=cIsUtility>{equipmentCooldown.Value}s</style> " +
+            $"<style=cStack>(+{equipmentCooldownPercentPerItem.Value * 100}% per item)</style>. " +
+            $"<style=cIsVoid>Corrupts all Soulbound Catalysts</style>.";
 
-        public override string ItemLore => "Somewhere in the midst of the Universe, on a barren, war-torn desert planet, drifters are finally banding together to revive their creed of order and structure.\r\n\r\nSoldier: \"I spotted the rebels, they're driving straight towards us!\"\r\nLeader: \"How far out were they?\"\r\nSoldier: \"My goggles told me they're eight thousand meters out, should take them another hour.\"\r\nLeader: \"Then we've got plenty of time to prepare. Charge the compound rifles.\"";
+        public override string ItemLore => "Somewhere in the midst of the Universe lies a dreary desert planet stricken with never-ending wars. " +
+            "Drifters are finally banding together to revive some notion of order and structure." +
+            "\r\n\r\nDrifter Scout: \"I spotted the rebels, they're driving straight towards us!\"" +
+            "\r\nDrifter Leader: \"How far out are they?\"" +
+            "\r\nDrifter Scout: \"Just a minute... My goggles tell me they're eight thousand meters out, should take them another hour.\"" +
+            "\r\nDrifter Leader: \"Then we've got plenty of time to prepare. Tell the others to charge the compound rifles.\"";
 
         public override ItemTier Tier => ItemTier.VoidTier3;
 
@@ -53,9 +63,10 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
         {
             abilityCooldown = config.Bind<float>("Item: " + ItemName, "Inital Ability Cooldown Seconds", 0.5f, "How much should cooldowns be reduced per enemy spawned?");
             abilityCooldownPercentPerItem = config.Bind<float>("Item: " + ItemName, "Ability Cooldown Percent Per Item", 0.6f, "How much should cooldowns be reduced per item?");
-            equipmentCooldown = config.Bind<float>("Item: " + ItemName, "Initial Equipment Cooldown Seconds", 1f, "How much should the player's damage increase?");
+            equipmentCooldown = config.Bind<float>("Item: " + ItemName, "Initial Equipment Cooldown Seconds", 1f, "How much should cooldowns be reduced per enemy spawned?");
             equipmentCooldownPercentPerItem = config.Bind<float>("Item: " + ItemName, "Equipment Cooldown Percent Per Item", 0.6f, "How much should cooldowns be reduced per item?");
 
+            // This is for the ItemBase class, it is not intended to be changed
             voidPair = config.Bind<string>("Item: " + ItemName, "Item to Corrupt", "Talisman", "Adjust which item this is the void pair of.");
         }
 
@@ -302,9 +313,14 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
 
         public override void Hooks()
         {
-            // Determines when effects are applied
+            On.RoR2.Run.Start += OnRunStart;
             On.RoR2.CharacterBody.OnInventoryChanged += OnInventoryChange;
             On.RoR2.CombatDirector.Spawn += OnEnemySpawn;
+        }
+
+        private void OnRunStart(On.RoR2.Run.orig_Start orig, Run self)
+        {
+            playerBodies.Clear();
         }
 
         private void OnInventoryChange(On.RoR2.CharacterBody.orig_OnInventoryChanged orig, CharacterBody self)
@@ -330,52 +346,48 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
             orig(self);
         }
 
+        // This is only called on the server, so players aren't having cooldowns reduced more than they should
         private bool OnEnemySpawn(On.RoR2.CombatDirector.orig_Spawn orig, CombatDirector self, SpawnCard spawnCard, EliteDef eliteDef, Transform spawnTarget, DirectorCore.MonsterSpawnDistance spawnDistance, bool preventOverhead, float valueMultiplier, DirectorPlacementRule.PlacementMode placementMode)
         {
-            foreach (CharacterBody body in playerBodies)
+            List<int> badIndex = new List<int>();
+
+            for (int i = 0; i < playerBodies.Count; i++)
             {
-                int inventoryCount = GetCount(body);
-                
-                if (inventoryCount <= 0)
+                if (playerBodies[i] == null)
                 {
-                    // Do nothing
-                }
-                else if (inventoryCount == 1)
-                {
-                    // Ability Cooldown Reduction
-                    float acr = abilityCooldown.Value;
-                    // Equipment Cooldown Reduction
-                    float ecr = equipmentCooldown.Value;
-
-                    SkillLocator locator = body.skillLocator;
-                    locator.primary.rechargeStopwatch += acr;
-                    locator.secondary.rechargeStopwatch += acr;
-                    locator.utility.rechargeStopwatch += acr;
-                    locator.special.rechargeStopwatch += acr;
-
-                    body.inventory.DeductActiveEquipmentCooldown(ecr);
-
-                    ModLogger.LogInfo("Reduce ability cooldowns by " + acr + "s and reduce equipment cooldown by " + ecr + "s.");
+                    // Prevent GetCount from breaking by dead players
+                    badIndex.Add(i);
                 }
                 else
                 {
-                    // Ability Cooldown Reduction
-                    float acr = abilityCooldown.Value + (inventoryCount - 1) * abilityCooldownPercentPerItem.Value * abilityCooldown.Value;
-                    // Equipment Cooldown Reduction
-                    float ecr = equipmentCooldown.Value + (inventoryCount - 1) * equipmentCooldownPercentPerItem.Value * equipmentCooldown.Value;
+                    int inventoryCount = GetCount(playerBodies[i]);
 
-                    SkillLocator locator = body.skillLocator;
-                    locator.primary.rechargeStopwatch += acr;
-                    locator.secondary.rechargeStopwatch += acr;
-                    locator.utility.rechargeStopwatch += acr;
-                    locator.special.rechargeStopwatch += acr;
+                    if (inventoryCount > 0)
+                    {
+                        // Ability Cooldown Reduction
+                        float acr = abilityCooldown.Value + (inventoryCount - 1) * abilityCooldownPercentPerItem.Value * abilityCooldown.Value;
 
-                    body.inventory.DeductActiveEquipmentCooldown(ecr);
+                        SkillLocator locator = playerBodies[i].skillLocator;
+                        locator.primary.rechargeStopwatch += acr;
+                        locator.secondary.rechargeStopwatch += acr;
+                        locator.utility.rechargeStopwatch += acr;
+                        locator.special.rechargeStopwatch += acr;
 
-                    ModLogger.LogInfo("Reduce ability cooldowns by " + acr + "s and reduce equipment cooldown by " + ecr + "s.");
+                        // Equipment Cooldown Reduction
+                        float ecr = equipmentCooldown.Value + (inventoryCount - 1) * equipmentCooldownPercentPerItem.Value * equipmentCooldown.Value;
+
+                        playerBodies[i].inventory.DeductActiveEquipmentCooldown(ecr);
+                    }
                 }
             }
-            
+
+            badIndex.Reverse();
+            foreach (int i in badIndex)
+            {
+                playerBodies.RemoveAt(i);
+            }
+            badIndex.Clear();
+
             return orig(self, spawnCard, eliteDef, spawnTarget, spawnDistance, preventOverhead, valueMultiplier, placementMode);
         }
     }

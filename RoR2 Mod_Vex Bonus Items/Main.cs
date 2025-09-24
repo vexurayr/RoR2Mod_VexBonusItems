@@ -17,9 +17,9 @@ using System.Reflection;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Networking;
-using System.Security;
 using System.Security.Permissions;
 
+// This mod would have never been completed without the help of all the lovely people in the RoR2 Modding Discord
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
 namespace RoR2_Mod_Vex_Bonus_Items
 {
@@ -50,7 +50,7 @@ namespace RoR2_Mod_Vex_Bonus_Items
             {"stubbed hopoo games/fx/solid parallax", "shaders/fx/hgsolidparallax" }
         };
 
-        //Provides a direct access to this plugin's logger for use in any of your other classes.
+        // Provides a direct access to this plugin's logger for use in any of your other classes.
         public static BepInEx.Logging.ManualLogSource ModLogger;
 
         public static ExpansionDef sotvDLC;
@@ -117,7 +117,7 @@ namespace RoR2_Mod_Vex_Bonus_Items
                 }
             }
 
-            //This section automatically scans the project for all artifacts
+            // This section automatically scans the project for all artifacts
             var ArtifactTypes = Assembly.GetExecutingAssembly().GetTypes().Where(type => !type.IsAbstract && type.IsSubclassOf(typeof(ArtifactBase)));
 
             foreach (var artifactType in ArtifactTypes)
@@ -129,7 +129,7 @@ namespace RoR2_Mod_Vex_Bonus_Items
                 }
             }
 
-            //This section automatically scans the project for all items
+            // This section automatically scans the project for all items
             var ItemTypes = Assembly.GetExecutingAssembly().GetTypes().Where(type => !type.IsAbstract && type.IsSubclassOf(typeof(ItemBase)));
 
             List<ItemDef.Pair> newVoidPairs = new List<ItemDef.Pair>();
@@ -177,7 +177,7 @@ namespace RoR2_Mod_Vex_Bonus_Items
                 }
             }
 
-            //this section automatically scans the project for all equipment
+            // This section automatically scans the project for all equipment
             var EquipmentTypes = Assembly.GetExecutingAssembly().GetTypes().Where(type => !type.IsAbstract && type.IsSubclassOf(typeof(EquipmentBase)));
 
             foreach (var equipmentType in EquipmentTypes)
@@ -189,7 +189,7 @@ namespace RoR2_Mod_Vex_Bonus_Items
                 }
             }
 
-            //this section automatically scans the project for all elite equipment
+            // This section automatically scans the project for all elite equipment
             var EliteEquipmentTypes = Assembly.GetExecutingAssembly().GetTypes().Where(type => !type.IsAbstract && type.IsSubclassOf(typeof(EliteEquipmentBase)));
 
             foreach (var eliteEquipmentType in EliteEquipmentTypes)
@@ -198,11 +198,8 @@ namespace RoR2_Mod_Vex_Bonus_Items
                 if (ValidateEliteEquipment(eliteEquipment, EliteEquipments))
                 {
                     eliteEquipment.Init(Config);
-
                 }
             }
-
-
         }
 
         private void ImproveStarCradle(On.RoR2.PurchaseInteraction.orig_OnInteractionBegin orig, PurchaseInteraction self, Interactor activator)
@@ -419,56 +416,6 @@ namespace RoR2_Mod_Vex_Bonus_Items
                 }
 
                 hasAdjustedTiers = true;
-            }
-        }
-
-        private void Update()
-        {
-            DebugSpawnItems();
-        }
-
-        private void DebugSpawnItems()
-        {
-            if (Input.GetKeyDown(KeyCode.F1))
-            {
-                // Get the player body to use a position
-                var transform = RoR2.PlayerCharacterMasterController.instances[0].master.GetBodyObject().transform;
-
-                ModLogger.LogInfo($"Player pressed F1. Spawning item at coordinates {transform.position}");
-
-                // Drop the item in front of the player
-                RoR2.PickupDropletController.CreatePickupDroplet(RoR2.PickupCatalog.FindPickupIndex(ItemCatalog.FindItemIndex("ITEM_ADAPTIVE_GOGGLES")), transform.position, transform.forward * 20f);
-                RoR2.PickupDropletController.CreatePickupDroplet(RoR2.PickupCatalog.FindPickupIndex(ItemCatalog.FindItemIndex("Talisman")), transform.position, transform.forward * -20f);
-            }
-            if (Input.GetKeyDown(KeyCode.F2))
-            {
-                // Get the player body to use a position
-                var transform = RoR2.PlayerCharacterMasterController.instances[0].master.GetBodyObject().transform;
-
-                ModLogger.LogInfo($"Player pressed F2. Spawning item at coordinates {transform.position}");
-
-                // Drop the item in front of the player
-                RoR2.PickupDropletController.CreatePickupDroplet(RoR2.PickupCatalog.FindPickupIndex(ItemCatalog.FindItemIndex("ITEM_DIVINE_RING")), transform.position, transform.forward * 20f);
-            }
-            if (Input.GetKeyDown(KeyCode.F3))
-            {
-                // Get the player body to use a position
-                var transform = RoR2.PlayerCharacterMasterController.instances[0].master.GetBodyObject().transform;
-
-                ModLogger.LogInfo($"Player pressed F3. Spawning item at coordinates {transform.position}");
-
-                // Drop the item in front of the player
-                RoR2.PickupDropletController.CreatePickupDroplet(RoR2.PickupCatalog.FindPickupIndex(ItemCatalog.FindItemIndex("ITEM_SWORD_OF_LOOTING")), transform.position, transform.forward * 20f);
-            }
-            if (Input.GetKeyDown(KeyCode.F4))
-            {
-                // Get the player body to use a position
-                var transform = RoR2.PlayerCharacterMasterController.instances[0].master.GetBodyObject().transform;
-
-                ModLogger.LogInfo($"Player pressed F4. Spawning equipment at coordinates {transform.position}");
-
-                // Drop the equipment in front of the player
-                RoR2.PickupDropletController.CreatePickupDroplet(RoR2.PickupCatalog.FindPickupIndex(EquipmentCatalog.FindEquipmentIndex("EQUIPMENT_TWO_TON_VEST")), transform.position, transform.forward * 20f);
             }
         }
     }

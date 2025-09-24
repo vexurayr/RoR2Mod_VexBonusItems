@@ -1,11 +1,8 @@
 ﻿using BepInEx.Configuration;
-using HarmonyLib;
 using R2API;
 using RoR2;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
 using UnityEngine;
 
 namespace RoR2_Mod_Vex_Bonus_Items.Items
@@ -25,7 +22,7 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
 
     public abstract class ItemBase<T> : ItemBase where T : ItemBase<T>
     {
-        //This, which you will see on all the -base classes, will allow both you and other modders to enter through any class with this to access internal fields/properties/etc as if they were a member inheriting this -Base too from this class.
+        // This, which you will see on all the -base classes, will allow both you and other modders to enter through any class with this to access internal fields/properties/etc as if they were a member inheriting this -Base too from this class.
         public static T instance { get; private set; }
 
         public ItemBase()
