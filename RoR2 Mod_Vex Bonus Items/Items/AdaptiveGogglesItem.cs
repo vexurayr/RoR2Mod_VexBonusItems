@@ -29,10 +29,10 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
 
         public override string ItemFullDescription => $"On enemy spawn, <style=cIsUtility>reduce all ability cooldowns</style> by " +
             $"<style=cIsUtility>{abilityCooldown.Value}s</style> " +
-            $"<style=cStack>(+{abilityCooldownPercentPerItem.Value * 100}% per item)</style> and " +
+            $"<style=cStack>(+{abilityCooldownPercentPerItem.Value * 100}% per stack)</style> and " +
             $"<style=cIsUtility>reduce equipment cooldown</style> by " +
             $"<style=cIsUtility>{equipmentCooldown.Value}s</style> " +
-            $"<style=cStack>(+{equipmentCooldownPercentPerItem.Value * 100}% per item)</style>. " +
+            $"<style=cStack>(+{equipmentCooldownPercentPerItem.Value * 100}% per stack)</style>. " +
             $"<style=cIsVoid>Corrupts all Soulbound Catalysts</style>.";
 
         public override string ItemLore => "Somewhere in the midst of the Universe lies a dreary desert planet stricken with never-ending wars. " +

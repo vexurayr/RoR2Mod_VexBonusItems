@@ -22,16 +22,16 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
 
         public override string ItemFullDescription => $"Increase <style=cIsHealth>health</style> per level by " +
             $"<style=cIsHealth>{healthIncreasePercentPerLevel.Value * 100}%</style> " +
-            $"<style=cStack>(+{healthIncreasePercentPerLevel.Value * 100}% per item)</style>, " +
+            $"<style=cStack>(+{healthIncreasePercentPerLevel.Value * 100}% per stack)</style>, " +
             $"increase <style=cIsHealing>regeneration</style> per level by " +
             $"<style=cIsHealing>{regenerationIncreasePercentPerLevel.Value * 100}%</style> " +
-            $"<style=cStack>(+{regenerationIncreasePercentPerLevel.Value * 100}% per item)</style>, " +
+            $"<style=cStack>(+{regenerationIncreasePercentPerLevel.Value * 100}% per stack)</style>, " +
             $"increase <style=cIsDamage>damage</style> per level by " +
             $"<style=cIsDamage>{damageIncreasePercentPerLevel.Value * 100}%</style> " +
-            $"<style=cStack>(+{damageIncreasePercentPerLevel.Value * 100}% per item)</style>, and " +
+            $"<style=cStack>(+{damageIncreasePercentPerLevel.Value * 100}% per stack)</style>, and " +
             $"increase <style=cIsUtility>experience gain</style> per level by " +
             $"<style=cIsUtility>{experienceIncreasePercentPerLevel.Value * 100}%</style> " +
-            $"<style=cStack>(+{experienceIncreasePercentPerLevel.Value * 100}% per item)</style>.";
+            $"<style=cStack>(+{experienceIncreasePercentPerLevel.Value * 100}% per stack)</style>.";
 
         public override string ItemLore => "<style=cEvent>//--TRANSCRIPT FROM UNIDENTIFIED ARTIFACT STORAGE--//</style>" +
             "\r\n\n\"What do you think it is, Bob?\"" +

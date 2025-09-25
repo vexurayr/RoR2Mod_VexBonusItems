@@ -18,8 +18,8 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
         public ConfigEntry<float> equipmentCooldown;
 
         public GameObject twoTonVestIndicator = null;
-        public GameObject explosionEffect => Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Common/VFX/ExplosionVFX.prefab").WaitForCompletion();
-        public RoR2.NetworkSoundEventDef explosionSound => Addressables.LoadAssetAsync<RoR2.NetworkSoundEventDef>("RoR2/DLC2/Child/nseTrackingProjectileExplosion.asset").WaitForCompletion();
+        public GameObject explosionEffect = null;
+        public RoR2.NetworkSoundEventDef explosionSound = null;
         
         public override string EquipmentName => "Two Ton Vest";
 
@@ -51,6 +51,7 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
             CreateEquipment();
             Hooks();
             InitIndicatorClone();
+            InitExplosionEffect();
         }
 
         protected override void CreateConfig(ConfigFile config)
@@ -292,6 +293,12 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
             twoTonVestIndicator.transform.localScale = Vector3.one * deathRadius.Value;
         }
 
+        public void InitExplosionEffect()
+        {
+            explosionEffect = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Common/VFX/ExplosionVFX.prefab").WaitForCompletion();
+            explosionSound = Addressables.LoadAssetAsync<RoR2.NetworkSoundEventDef>("RoR2/DLC2/Child/nseTrackingProjectileExplosion.asset").WaitForCompletion();
+        }
+
         private void OnEquipmentGained(On.RoR2.CharacterBody.orig_OnEquipmentGained orig, CharacterBody self, EquipmentDef equipmentDef)
         {
             if (equipmentDef == EquipmentDef && self.hasEffectiveAuthority)
@@ -444,17 +451,17 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
             {
                 color = Color.red,
                 origin = origin,
-                scale = 3.5f,
+                scale = 5f,
                 rotation = Quaternion.identity
             };
             
             if (explosionEffect != null)
             {
-                EffectManager.SpawnEffect(explosionEffect, effectData, false);
+                EffectManager.SpawnEffect(explosionEffect, effectData, true);
             }
             if (explosionSound != null)
             {
-                Util.PlaySound(explosionSound.eventName, slot.gameObject);
+                Util.PlaySound(explosionSound.eventName, slot.characterBody.gameObject);
             }
             
             return true;

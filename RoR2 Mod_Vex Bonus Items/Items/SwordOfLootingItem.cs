@@ -61,25 +61,25 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
             {
                 // additionalItems is plural
                 return $"When a <style=cHumanObjective>teleporter boss</style> would drop an item, drop " +
-                    $"<style=cIsUtility>{additionalItems.Value} more items</style> <style=cStack>(+{additionalItemsPerItem.Value} item per item)</style>.";
+                    $"<style=cIsUtility>{additionalItems.Value} more items</style> <style=cStack>(+{additionalItemsPerItem.Value} item per stack)</style>.";
             }
             else if (additionalItems.Value <= 1 && additionalItemsPerItem.Value > 1)
             {
                 // additionalItemsPerItem is plural
                 return $"When a <style=cHumanObjective>teleporter boss</style> would drop an item, drop " +
-                    $"<style=cIsUtility>{additionalItems.Value} more item</style> <style=cStack>(+{additionalItemsPerItem.Value} items per item)</style>.";
+                    $"<style=cIsUtility>{additionalItems.Value} more item</style> <style=cStack>(+{additionalItemsPerItem.Value} items per stack)</style>.";
             }
             else if (additionalItems.Value > 1 && additionalItemsPerItem.Value > 1)
             {
                 // Both are plural
                 return $"When a <style=cHumanObjective>teleporter boss</style> would drop an item, drop " +
-                    $"<style=cIsUtility>{additionalItems.Value} more items</style> <style=cStack>(+{additionalItemsPerItem.Value} items per item)</style>.";
+                    $"<style=cIsUtility>{additionalItems.Value} more items</style> <style=cStack>(+{additionalItemsPerItem.Value} items per stack)</style>.";
             }
             else
             {
                 // Neither are plural
                 return $"When a <style=cHumanObjective>teleporter boss</style> would drop an item, drop " +
-                    $"<style=cIsUtility>{additionalItems.Value} more item</style> <style=cStack>(+{additionalItemsPerItem.Value} item per item)</style>.";
+                    $"<style=cIsUtility>{additionalItems.Value} more item</style> <style=cStack>(+{additionalItemsPerItem.Value} item per stack)</style>.";
             }
         }
 
