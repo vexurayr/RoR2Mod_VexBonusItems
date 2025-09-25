@@ -368,7 +368,7 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
             }
             
             // Because additionalItemsToSpawn is set here and not on InventoryChange, any Sword of Looting items
-            // acquired or lost (such as by dying) after the boss spawns will not change the number of items dropped.
+            // acquired or lost after the boss spawns will not change the number of items dropped.
             additionalItemsToSpawn = totalItems;
         }
     }

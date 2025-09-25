@@ -1,10 +1,8 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
-using On.RoR2.Items;
 using R2API;
 using R2API.Utils;
 using RoR2;
-using RoR2.ExpansionManagement;
 using RoR2_Mod_Vex_Bonus_Items.Artifact;
 using RoR2_Mod_Vex_Bonus_Items.Equipment;
 using RoR2_Mod_Vex_Bonus_Items.Equipment.EliteEquipment;
@@ -53,8 +51,6 @@ namespace RoR2_Mod_Vex_Bonus_Items
         // Provides a direct access to this plugin's logger for use in any of your other classes.
         public static BepInEx.Logging.ManualLogSource ModLogger;
 
-        public static ExpansionDef sotvDLC;
-
         public static ConfigEntry<bool> lockVoidsBehindPair;
         public static ConfigEntry<bool> doVoidPickupBorders;
         public static ConfigEntry<bool> doVoidCommandVFX;
@@ -76,8 +72,6 @@ namespace RoR2_Mod_Vex_Bonus_Items
 
             ModLogger = Logger;
 
-            sotvDLC = Addressables.LoadAssetAsync<ExpansionDef>("RoR2/DLC1/Common/DLC1.asset").WaitForCompletion();
-
             // Don't know how to create/use an asset bundle, or don't have a unity project set up?
             // Look here for info on how to set these up: https://github.com/KomradeSpectre/AetheriumMod/blob/rewrite-master/Tutorials/Item%20Mod%20Creation.md#unity-project
             // (This is a bit old now, but the information on setting the unity asset bundle should be the same.)
@@ -88,9 +82,6 @@ namespace RoR2_Mod_Vex_Bonus_Items
             }
 
             ShaderConversion(MainAssets);
-
-            On.RoR2.Items.ContagiousItemManager.Init += AddVoidItemsToDict;
-            On.RoR2.ItemCatalog.Init += AddUnlocksToVoidItems;
 
             On.RoR2.Language.GetLocalizedStringByToken += (orig, self, token) => {
                 if (ItemBase.TokenToVoidPair.ContainsKey(token))
@@ -229,47 +220,6 @@ namespace RoR2_Mod_Vex_Bonus_Items
                     material.shader = replacementShader;
                 }
             }
-        }
-
-        private void AddUnlocksToVoidItems(On.RoR2.ItemCatalog.orig_Init orig)
-        {
-            orig();
-            if (lockVoidsBehindPair.Value)
-            {
-                foreach (var voidpair in ItemCatalog.itemRelationships[DLC1Content.ItemRelationshipTypes.ContagiousItem])
-                {
-                    if (voidpair.itemDef1.unlockableDef != null && voidpair.itemDef2.unlockableDef == null)
-                    {
-                        Debug.Log("Updating unlock condition for " + voidpair.itemDef2.nameToken + " to " + voidpair.itemDef1.nameToken + "'s.");
-                        voidpair.itemDef2.unlockableDef = voidpair.itemDef1.unlockableDef;
-                    }
-                }
-            }
-        }
-
-        private void AddVoidItemsToDict(ContagiousItemManager.orig_Init orig)
-        {
-            List<ItemDef.Pair> newVoidPairs = new List<ItemDef.Pair>();
-            Debug.Log("Adding VanillaVoid item transformations...");
-            foreach (var item in Items)
-            {
-                if (item.ItemDef.deprecatedTier != ItemTier.NoTier)
-                {
-                    Debug.Log("Item Name: " + item.ItemName);
-                    item.AddVoidPair(newVoidPairs);
-                }
-                else
-                {
-                    Debug.Log("Skipping " + item.ItemName);
-                }
-            }
-            var key = DLC1Content.ItemRelationshipTypes.ContagiousItem;
-            Debug.Log(key);
-            var voidPairs = ItemCatalog.itemRelationships[DLC1Content.ItemRelationshipTypes.ContagiousItem];
-            ItemCatalog.itemRelationships[DLC1Content.ItemRelationshipTypes.ContagiousItem] = voidPairs.Union(newVoidPairs).ToArray();
-            Debug.Log("Finishing appending VanillaVoid item transformations.");
-
-            orig();
         }
 
         /// <summary>

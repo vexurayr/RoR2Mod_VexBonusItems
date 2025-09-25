@@ -1,9 +1,11 @@
 ﻿using BepInEx.Configuration;
 using R2API;
 using RoR2;
+using RoR2.ExpansionManagement;
 using RoR2_Mod_Vex_Bonus_Items.Utils;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using static RoR2_Mod_Vex_Bonus_Items.Main;
 
 namespace RoR2_Mod_Vex_Bonus_Items.Items
@@ -11,6 +13,7 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
     internal class AdaptiveGogglesItem : ItemBase<AdaptiveGogglesItem>
     {
         public List<CharacterBody> playerBodies = new List<CharacterBody>();
+        public ItemRelationshipProvider itemRelationshipProvider;
 
         public ConfigEntry<float> abilityCooldown;
         public ConfigEntry<float> abilityCooldownPercentPerItem;
@@ -55,7 +58,8 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
             CreateLang();
             SetLogbookAppearance(.5f, 1f);
             CreateItem();
-            ItemDef.requiredExpansion = sotvDLC;
+            ItemDef.requiredExpansion = Addressables.LoadAssetAsync<ExpansionDef>("RoR2/DLC1/Common/DLC1.asset").WaitForCompletion();
+            InitItemRelationshipProvider();
             Hooks();
         }
 
@@ -318,9 +322,27 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
             On.RoR2.CombatDirector.Spawn += OnEnemySpawn;
         }
 
+        private void InitItemRelationshipProvider()
+        {
+            ItemDef talisman = Addressables.LoadAssetAsync<ItemDef>("RoR2/Base/Talisman/Talisman.asset").WaitForCompletion();
+
+            itemRelationshipProvider = ScriptableObject.CreateInstance<ItemRelationshipProvider>();
+            itemRelationshipProvider.name = "AdaptiveGogglesItemRelationshipProvider";
+            itemRelationshipProvider.relationshipType = Addressables.LoadAssetAsync<ItemRelationshipType>("RoR2/DLC1/Common/ContagiousItem.asset").WaitForCompletion();
+            itemRelationshipProvider.relationships = new ItemDef.Pair[1];
+            itemRelationshipProvider.relationships[0] = new ItemDef.Pair
+            {
+                itemDef1 = talisman,
+                itemDef2 = ItemDef
+            };
+
+            ContentAddition.AddItemRelationshipProvider(itemRelationshipProvider);
+        }
+
         private void OnRunStart(On.RoR2.Run.orig_Start orig, Run self)
         {
             playerBodies.Clear();
+            orig(self);
         }
 
         private void OnInventoryChange(On.RoR2.CharacterBody.orig_OnInventoryChanged orig, CharacterBody self)

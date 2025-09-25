@@ -1,5 +1,4 @@
 ﻿using BepInEx.Configuration;
-using EntityStates;
 using R2API;
 using RoR2;
 using RoR2_Mod_Vex_Bonus_Items.Utils;
@@ -18,14 +17,10 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
         public ConfigEntry<float> redItemPercentChance;
         public ConfigEntry<float> equipmentCooldown;
 
-        public Transform ringIndicatorInstance;
-        public bool isRingUpdating = false;
-        public CharacterBody owner;
-
+        public GameObject twoTonVestIndicator = null;
         public GameObject explosionEffect => Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Common/VFX/ExplosionVFX.prefab").WaitForCompletion();
-
         public RoR2.NetworkSoundEventDef explosionSound => Addressables.LoadAssetAsync<RoR2.NetworkSoundEventDef>("RoR2/DLC2/Child/nseTrackingProjectileExplosion.asset").WaitForCompletion();
-
+        
         public override string EquipmentName => "Two Ton Vest";
 
         public override string EquipmentLangTokenName => "TWO_TON_VEST";
@@ -55,6 +50,7 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
             SetLogbookAppearance(.5f, 1.5f);
             CreateEquipment();
             Hooks();
+            InitIndicatorClone();
         }
 
         protected override void CreateConfig(ConfigFile config)
@@ -287,32 +283,20 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
         {
             On.RoR2.CharacterBody.OnEquipmentGained += OnEquipmentGained;
             On.RoR2.CharacterBody.OnEquipmentLost += OnEquipmentLost;
-            On.RoR2.CharacterBody.Update += UpdateVisualAid;
         }
 
-        private void UpdateVisualAid(On.RoR2.CharacterBody.orig_Update orig, CharacterBody self)
+        public void InitIndicatorClone()
         {
-            if (!isRingUpdating || !owner)
-            {
-                return;
-            }
-
-            UpdateRingIndicator();
-
-            orig(self);
+            twoTonVestIndicator = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Huntress/HuntressArrowRainIndicator.prefab")
+            .WaitForCompletion().InstantiateClone("TwoTonVestIndicator");
+            twoTonVestIndicator.transform.localScale = Vector3.one * deathRadius.Value;
         }
 
         private void OnEquipmentGained(On.RoR2.CharacterBody.orig_OnEquipmentGained orig, CharacterBody self, EquipmentDef equipmentDef)
         {
-            if (equipmentDef == EquipmentDef)
+            if (equipmentDef == EquipmentDef && self.hasEffectiveAuthority)
             {
-                // Make the ring appear so the player sees the range of the equipment
-                if (self.isPlayerControlled)
-                {
-                    owner = self;
-                }
-                
-                isRingUpdating = true;
+                SetTwoTonVestIndicator(self, false);
             }
 
             orig(self, equipmentDef);
@@ -320,11 +304,9 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
 
         private void OnEquipmentLost(On.RoR2.CharacterBody.orig_OnEquipmentLost orig, CharacterBody self, EquipmentDef equipmentDef)
         {
-            // Remove the ring effect if it exists
-            if (ringIndicatorInstance)
+            if (equipmentDef == EquipmentDef && self.hasEffectiveAuthority)
             {
-                isRingUpdating = false;
-                EntityState.Destroy(ringIndicatorInstance.gameObject);
+                SetTwoTonVestIndicator(self, true);
             }
 
             orig(self, equipmentDef);
@@ -386,6 +368,8 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
                             delayedDamageSecondHalf = false,
                             damage = characterBody.maxHealth
                         };
+                        enemyDamageInfo.damageType |= DamageType.BypassBlock;
+                        enemyDamageInfo.damageType |= DamageType.BypassOneShotProtection;
 
                         // Track only the enemies killed
                         enemiesKilled++;
@@ -510,31 +494,41 @@ namespace RoR2_Mod_Vex_Bonus_Items.Equipment
             }
         }
 
-        private void CreateRingIndicator()
+        private void SetTwoTonVestIndicator(CharacterBody body, bool isDestroyed)
         {
-            if (!owner)
+            if (isDestroyed)
             {
-                return;
+                body.AddItemBehavior<TwoTonVestIndicatorBehavior>(0);
             }
+            else
+            {
+                body.AddItemBehavior<TwoTonVestIndicatorBehavior>(1);
+            }
+        }
+    }
 
-            ringIndicatorInstance = UnityEngine.Object.Instantiate<GameObject>(EntityStates.Huntress.ArrowRain.areaIndicatorPrefab).transform;
-            ringIndicatorInstance.localScale = Vector3.one * deathRadius.Value;
-            ringIndicatorInstance.transform.position = owner.corePosition;
+    public class TwoTonVestIndicatorBehavior : CharacterBody.ItemBehavior
+    {
+        public GameObject twoTonVestIndicatorInstance;
+
+        private void Awake()
+        {
+            this.enabled = false;
         }
 
-        private void UpdateRingIndicator()
+        private void OnEnable()
         {
-            if (!ringIndicatorInstance)
-            {
-                CreateRingIndicator();
-            }
+            twoTonVestIndicatorInstance = Instantiate(TwoTonVestEquipment.instance.twoTonVestIndicator,
+                this.body.transform.position, Quaternion.identity, this.body.transform);
+            twoTonVestIndicatorInstance.transform.localPosition = Vector3.zero;
+        }
 
-            if (!owner)
+        private void OnDisable()
+        {
+            if (twoTonVestIndicatorInstance != null)
             {
-                return;
+                Destroy(twoTonVestIndicatorInstance);
             }
-
-            ringIndicatorInstance.transform.position = owner.corePosition;
         }
     }
 }
