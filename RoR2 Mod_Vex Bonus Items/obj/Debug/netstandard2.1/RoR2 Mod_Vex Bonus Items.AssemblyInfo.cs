@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RoR2 Mod_Vex Bonus Items")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7073712d468f3c26eb41ae6c3cfdd7428147225")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f6d6436dcd42050111c59193197c5e229340dca")]
 [assembly: System.Reflection.AssemblyProductAttribute("RoR2 Mod_Vex Bonus Items")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RoR2 Mod_Vex Bonus Items")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

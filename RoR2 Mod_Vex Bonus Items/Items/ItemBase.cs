@@ -153,7 +153,7 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
             ItemDef.canRemove = CanRemove;
             ItemDef.deprecatedTier = Tier;
             ItemDef.tier = Tier;
-
+            
             if (ItemTags.Length > 0) { ItemDef.tags = ItemTags; }
 
             ItemAPI.Add(new CustomItem(ItemDef, CreateItemDisplayRules()));

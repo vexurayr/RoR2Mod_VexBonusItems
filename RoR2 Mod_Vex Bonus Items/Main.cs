@@ -24,7 +24,7 @@ namespace RoR2_Mod_Vex_Bonus_Items
     [BepInPlugin(ModGuid, ModName, ModVer)]
     [BepInDependency(R2API.R2API.PluginGUID, R2API.R2API.PluginVersion)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
-    [R2APISubmoduleDependency(nameof(ItemAPI), nameof(LanguageAPI), nameof(EliteAPI), nameof(PrefabAPI), nameof(DamageAPI))]
+    [R2APISubmoduleDependency(nameof(ItemAPI), nameof(LanguageAPI), nameof(EliteAPI), nameof(PrefabAPI), nameof(DamageAPI), nameof(UnlockableDef))]
     public class Main : BaseUnityPlugin
     {
         public const string ModGuid = "com.Vexurayr.VexBonusItems";
