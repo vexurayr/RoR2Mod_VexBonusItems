@@ -9,9 +9,9 @@ never would have been turned into a functional mod without the help of the RoR2 
 
 | Icon | Item | Description | Rarity |
 |:-|-|------|-|
-|![](https://github.com/vexurayr/ror2mod_vexbonusitems/unityfiles/assets/textures/items/swordoflooting/swordoflootingicon.png) | **Sword of Looting** | When a teleporter boss would drop an item, drop `1` more item (`+1` item per stack). | Green |
-|![](https://github.com/vexurayr/ror2mod_vexbonusitems/unityfiles/assets/textures/items/divinering/divineringicon.png) | **Divine Ring** | Increase health per level by `5%` (`+5%` per stack), increase regeneration per level by `5%` (`+5%` per stack), increase damage per level by `5%` (`+5%` per stack), and increase experience gain per level by `500%` (`+500%` per stack). | Red |
-|![](https://github.com/vexurayr/ror2mod_vexbonusitems/unityfiles/assets/textures/items/adaptivegoggles/adaptivegogglesicon.png) | **Adaptive Goggles** | On enemy spawn, reduce all ability cooldowns by `0.5` seconds (`+60%` per stack) and reduce equipment cooldown by `1` second (`+60%` per stack). Corrupts all Soulbound Catalysts. | Void |
+|![](https://github.com/vexurayr/RoR2Mod_VexBonusItems/blob/567ae3b3a281f10e13bb62171dcbb143cbd26d95/Unity%20Files/Assets/Textures/Items/Sword%20of%20Looting/SwordOfLootingIcon.png) | **Sword of Looting** | When a teleporter boss would drop an item, drop `1` more item (`+1` item per stack). | Green |
+|![](https://github.com/vexurayr/RoR2Mod_VexBonusItems/blob/567ae3b3a281f10e13bb62171dcbb143cbd26d95/Unity%20Files/Assets/Textures/Items/Divine%20Ring/DivineRingIcon.png) | **Divine Ring** | Increase health per level by `5%` (`+5%` per stack), increase regeneration per level by `5%` (`+5%` per stack), increase damage per level by `5%` (`+5%` per stack), and increase experience gain per level by `500%` (`+500%` per stack). | Red |
+|![](https://github.com/vexurayr/RoR2Mod_VexBonusItems/blob/567ae3b3a281f10e13bb62171dcbb143cbd26d95/Unity%20Files/Assets/Textures/Items/Adaptive%20Goggles/AdaptiveGogglesIcon.png) | **Adaptive Goggles** | On enemy spawn, reduce all ability cooldowns by `0.5` seconds (`+60%` per stack) and reduce equipment cooldown by `1` second (`+60%` per stack). Corrupts all Soulbound Catalysts. | Void |
 
 ----
 ## Equipment:
@@ -19,7 +19,7 @@ never would have been turned into a functional mod without the help of the RoR2 
 
 | Icon | Equipment | Description | Type |
 |:-|-|------|-|
-|![](https://github.com/vexurayr/ror2mod_vexbonusitems/unityfiles/assets/textures/items/twotonvest/twotonvesticon.png)| **Two Ton Vest** | Instantly kill all non-boss enemies within a `20m` radius. Each enemy killed drops a random item. Lose `30%` health for each enemy killed. This disregards armor, barrier, and one shot protection, but will leave you with at least `1` hp. | Lunar |
+|![](https://github.com/vexurayr/RoR2Mod_VexBonusItems/blob/567ae3b3a281f10e13bb62171dcbb143cbd26d95/Unity%20Files/Assets/Textures/Items/Two%20Ton%20Vest/TwoTonVestIcon.png)| **Two Ton Vest** | Instantly kill all non-boss enemies within a `20m` radius. Each enemy killed drops a random item. Lose `30%` health for each enemy killed. This disregards armor, barrier, and one shot protection, but will leave you with at least `1` hp. | Lunar |
 
 ----
 ## Changelog
