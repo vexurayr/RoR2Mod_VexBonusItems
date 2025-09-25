@@ -1,0 +1,16 @@
+{
+  "name": "VexBonusItems",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/vexurayr/RoR2Mod_VexBonusItems",
+  "description": "This mod adds a few items I thought would be viable vanilla game items. The experience is meant to match the balance of other vanilla items.",
+  "dependencies": [
+    "bbepis-BepInExPack-5.4.2121",
+    "RiskofThunder-R2API_Items-1.0.7",
+    "RiskofThunder-R2API_Language-1.0.1",
+    "RiskofThunder-R2API_Elites-1.0.7",
+    "RiskofThunder-R2API_Prefab-1.1.1",
+    "RiskofThunder-R2API_DamageType-1.1.7",
+    "RiskofThunder-R2API_RecalculateStats-1.6.1",
+    "RiskofThunder-HookGenPatcher-1.2.9"
+  ]
+}
