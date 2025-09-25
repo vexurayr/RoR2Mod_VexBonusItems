@@ -9,9 +9,9 @@ never would have been turned into a functional mod without the help of the RoR2 
 
 | Icon | Item | Description | Rarity |
 |:-|-|------|-|
-|![](https://imgur.com/gallery/vexbonusitems-ror2-mod-ikr61ib#myiZIeD) | **Sword of Looting** | When a teleporter boss would drop an item, drop `1` more item (`+1` item per stack). | Green |
-|![](https://imgur.com/gallery/vexbonusitems-ror2-mod-ikr61ib#9xb1cCp) | **Divine Ring** | Increase health per level by `5%` (`+5%` per stack), increase regeneration per level by `5%` (`+5%` per stack), increase damage per level by `5%` (`+5%` per stack), and increase experience gain per level by `500%` (`+500%` per stack). | Red |
-|![](https://imgur.com/gallery/vexbonusitems-ror2-mod-ikr61ib#R91KSsM) | **Adaptive Goggles** | On enemy spawn, reduce all ability cooldowns by `0.5` seconds (`+60%` per stack) and reduce equipment cooldown by `1` second (`+60%` per stack). Corrupts all Soulbound Catalysts. | Void |
+|![](/unity files/assets/textures/items/sword of looting/swordoflootingicon.png) | **Sword of Looting** | When a teleporter boss would drop an item, drop `1` more item (`+1` item per stack). | Green |
+|![](/unity files/assets/textures/items/divine ring/divineringicon.png) | **Divine Ring** | Increase health per level by `5%` (`+5%` per stack), increase regeneration per level by `5%` (`+5%` per stack), increase damage per level by `5%` (`+5%` per stack), and increase experience gain per level by `500%` (`+500%` per stack). | Red |
+|![](/unity files/assets/textures/items/adaptive goggles/adaptivegogglesicon.png) | **Adaptive Goggles** | On enemy spawn, reduce all ability cooldowns by `0.5` seconds (`+60%` per stack) and reduce equipment cooldown by `1` second (`+60%` per stack). Corrupts all Soulbound Catalysts. | Void |
 
 ----
 ## Equipment:
@@ -19,7 +19,7 @@ never would have been turned into a functional mod without the help of the RoR2 
 
 | Icon | Equipment | Description | Type |
 |:-|-|------|-|
-|![](https://imgur.com/gallery/vexbonusitems-ror2-mod-ikr61ib#Pw4cIYg)| **Two Ton Vest** | Instantly kill all non-boss enemies within a `20m` radius. Each enemy killed drops a random item. Lose `30%` health for each enemy killed. This disregards armor, barrier, and one shot protection, but will leave you with at least `1` hp. | Lunar |
+|![](/unity files/assets/textures/items/two ton vest/twotonvesticon.png)| **Two Ton Vest** | Instantly kill all non-boss enemies within a `20m` radius. Each enemy killed drops a random item. Lose `30%` health for each enemy killed. This disregards armor, barrier, and one shot protection, but will leave you with at least `1` hp. | Lunar |
 
 ----
 ## Changelog
