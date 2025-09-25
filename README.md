@@ -22,6 +22,9 @@ never would have been turned into a functional mod without the help of the RoR2 
 ----
 ## Changelog
 
+[1.0.1]
++ Fixed the README on the Thunderstore page.
+
 [1.0.0]
 + Added Sword of Looting (green item), Divine Ring (red item), Adaptive Goggles (void item), and Two Ton Vest (lunar equipment).
 + Made every item function in multiplayer.
