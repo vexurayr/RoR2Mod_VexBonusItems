@@ -8,18 +8,18 @@ never would have been turned into a functional mod without the help of the RoR2 
 ----
 
 | Icon | Item | Description | Rarity |
-|:-|-|------|-|-|
-|![](https://imgur.com/myiZIeD) | **Sword of Looting** | When a teleporter boss would drop an item, drop `1` more item (`+1` item per stack). | Green |
-|![](https://imgur.com/9xb1cCp) | **Divine Ring** | Increase health per level by `5%` (`+5%` per stack), increase regeneration per level by `5%` (`+5%` per stack), increase damage per level by `5%` (`+5%` per stack), and increase experience gain per level by `500%` (`+500%` per stack). | Red |
-|![](https://imgur.com/R91KSsM) | **Adaptive Goggles** | On enemy spawn, reduce all ability cooldowns by `0.5` seconds (`+60%` per stack) and reduce equipment cooldown by `1` second (`+60%` per stack). Corrupts all Soulbound Catalysts. | Void |
+|:-|-|------|-|
+|![Sword of Looting Icon](https://imgur.com/myiZIeD) | **Sword of Looting** | When a teleporter boss would drop an item, drop `1` more item (`+1` item per stack). | Green |
+|![Divine Ring Icon](https://imgur.com/9xb1cCp) | **Divine Ring** | Increase health per level by `5%` (`+5%` per stack), increase regeneration per level by `5%` (`+5%` per stack), increase damage per level by `5%` (`+5%` per stack), and increase experience gain per level by `500%` (`+500%` per stack). | Red |
+|![Adaptive Goggles Icon](https://imgur.com/R91KSsM) | **Adaptive Goggles** | On enemy spawn, reduce all ability cooldowns by `0.5` seconds (`+60%` per stack) and reduce equipment cooldown by `1` second (`+60%` per stack). Corrupts all Soulbound Catalysts. | Void |
 
 ----
 ## Equipment:
 ----
 
 | Icon | Equipment | Description | Type |
-|:-|-|------|-|-|
-|![](https://imgur.com/Pw4cIYg)| **Two Ton Vest** | Instantly kill all non-boss enemies within a `20m` radius. Each enemy killed drops a random item. Lose `30%` health for each enemy killed. This disregards armor, barrier, and one shot protection, but will leave you with at least `1` hp. | Lunar |
+|:-|-|------|-|
+|![Two Ton Vest icon](https://imgur.com/Pw4cIYg)| **Two Ton Vest** | Instantly kill all non-boss enemies within a `20m` radius. Each enemy killed drops a random item. Lose `30%` health for each enemy killed. This disregards armor, barrier, and one shot protection, but will leave you with at least `1` hp. | Lunar |
 
 ----
 ## Changelog
@@ -33,10 +33,10 @@ never would have been turned into a functional mod without the help of the RoR2 
 ----
 
 ## HUGE Thank You to  
-**.score**
-**Chinchi**
-**KingEnderBrine**
-**The RoR2 Modding Discord:** https://discord.gg/dvsFxMY5HP
-**KomradeSpectre:** https://www.youtube.com/watch?v=8TsF8elv_m0 / https://github.com/KomradeSpectre/AetheriumMod/tree/rewrite-master
-**The RoR2 Modding Wiki:** https://risk-of-thunder.github.io/R2Wiki/
-**The RoR2 Language File Editor:** https://xuerian.github.io/RoR2LanguageEditor/
+**.score**<br/>
+**Chinchi**<br/>
+**KingEnderBrine**<br/>
+**The RoR2 Modding Discord:** https://discord.gg/dvsFxMY5HP<br/>
+**KomradeSpectre:** https://www.youtube.com/watch?v=8TsF8elv_m0 / https://github.com/KomradeSpectre/AetheriumMod/tree/rewrite-master<br/>
+**The RoR2 Modding Wiki:** https://risk-of-thunder.github.io/R2Wiki/<br/>
+**The RoR2 Language File Editor:** https://xuerian.github.io/RoR2LanguageEditor/<br/>
