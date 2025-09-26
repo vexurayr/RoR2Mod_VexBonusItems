@@ -22,6 +22,9 @@ never would have been turned into a functional mod without the help of the RoR2 
 ----
 ## Changelog
 
+[1.0.2]
++ (Dear God this is embarrassing) Actually added the dll to the Thunderstore zip so the mod can be played.
+
 [1.0.1]
 + Fixed the README on the Thunderstore page.
 
