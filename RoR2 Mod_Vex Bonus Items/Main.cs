@@ -29,7 +29,7 @@ namespace RoR2_Mod_Vex_Bonus_Items
     {
         public const string ModGuid = "com.Vexurayr.VexBonusItems";
         public const string ModName = "Vex Bonus Items";
-        public const string ModVer = "1.0.2";
+        public const string ModVer = "1.0.3";
         
         public static AssetBundle MainAssets;
 

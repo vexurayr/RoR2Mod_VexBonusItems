@@ -22,6 +22,9 @@ never would have been turned into a functional mod without the help of the RoR2 
 ----
 ## Changelog
 
+[1.0.3]
++ Fixed mod for the Alloyed Collective update, which changed a few parameters on methods I used.
+
 [1.0.2]
 + (Dear God this is embarrassing) Actually added the dll to the Thunderstore zip so the mod can be played.
 

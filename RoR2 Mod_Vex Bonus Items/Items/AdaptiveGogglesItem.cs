@@ -369,7 +369,7 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
         }
 
         // This is only called on the server, so players aren't having cooldowns reduced more than they should
-        private bool OnEnemySpawn(On.RoR2.CombatDirector.orig_Spawn orig, CombatDirector self, SpawnCard spawnCard, EliteDef eliteDef, Transform spawnTarget, DirectorCore.MonsterSpawnDistance spawnDistance, bool preventOverhead, float valueMultiplier, DirectorPlacementRule.PlacementMode placementMode)
+        private bool OnEnemySpawn(On.RoR2.CombatDirector.orig_Spawn orig, CombatDirector self, SpawnCard spawnCard, EliteDef eliteDef, Transform spawnTarget, DirectorCore.MonsterSpawnDistance spawnDistance, bool preventOverhead, float valueMultiplier, DirectorPlacementRule.PlacementMode placementMode, bool singleScaledBoss)
         {
             List<int> badIndex = new List<int>();
 
@@ -410,7 +410,7 @@ namespace RoR2_Mod_Vex_Bonus_Items.Items
             }
             badIndex.Clear();
 
-            return orig(self, spawnCard, eliteDef, spawnTarget, spawnDistance, preventOverhead, valueMultiplier, placementMode);
+            return orig(self, spawnCard, eliteDef, spawnTarget, spawnDistance, preventOverhead, valueMultiplier, placementMode, singleScaledBoss);
         }
     }
 }

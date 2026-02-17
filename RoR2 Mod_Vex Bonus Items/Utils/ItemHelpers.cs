@@ -143,7 +143,16 @@ namespace RoR2_Mod_Vex_Bonus_Items.Utils
             {
                 if (index != RoR2.DotController.DotIndex.None)
                 {
-                    RoR2.DotController.InflictDot(body.gameObject, body.gameObject, index, duration, 0.25f);
+                    InflictDotInfo dotInfo = new InflictDotInfo
+                    {
+                        victimObject = body.gameObject,
+                        attackerObject = body.gameObject,
+                        hitHurtBox = null,
+                        dotIndex = index,
+                        duration = duration,
+                        damageMultiplier = 0.25f
+                    };
+                    RoR2.DotController.InflictDot(ref dotInfo);
                 }
                 else
                 {
